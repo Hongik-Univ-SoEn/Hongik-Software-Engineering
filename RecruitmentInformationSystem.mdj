@@ -32934,6 +32934,124 @@
 									]
 								}
 							]
+						},
+						{
+							"_type": "UMLPackage",
+							"_id": "AAAAAAGIBSu4INMbjHA=",
+							"_parent": {
+								"$ref": "AAAAAAGIBIp/KQ5NHGY="
+							},
+							"name": "Chanhee",
+							"ownedElements": [
+								{
+									"_type": "UMLClass",
+									"_id": "AAAAAAGIBSnHmNAi71A=",
+									"_parent": {
+										"$ref": "AAAAAAGIBSu4INMbjHA="
+									},
+									"name": "checkHireInfo",
+									"stereotype": {
+										"$ref": "AAAAAAGIBSPUascUnUQ="
+									},
+									"operations": [
+										{
+											"_type": "UMLOperation",
+											"_id": "AAAAAAGIBSnHmNAjciY=",
+											"_parent": {
+												"$ref": "AAAAAAGIBSnHmNAi71A="
+											},
+											"name": "showHireInfo()"
+										},
+										{
+											"_type": "UMLOperation",
+											"_id": "AAAAAAGIBSnHmNAkCFg=",
+											"_parent": {
+												"$ref": "AAAAAAGIBSnHmNAi71A="
+											},
+											"name": "selectHireInfo()"
+										}
+									]
+								},
+								{
+									"_type": "UMLClass",
+									"_id": "AAAAAAGIBSnHmNAssuw=",
+									"_parent": {
+										"$ref": "AAAAAAGIBSu4INMbjHA="
+									},
+									"name": "closedHireInfo",
+									"stereotype": {
+										"$ref": "AAAAAAGIBSPUascUnUQ="
+									},
+									"operations": [
+										{
+											"_type": "UMLOperation",
+											"_id": "AAAAAAGIBSnHmNAtX1w=",
+											"_parent": {
+												"$ref": "AAAAAAGIBSnHmNAssuw="
+											},
+											"name": "showClosedHireInfoList()"
+										}
+									]
+								},
+								{
+									"_type": "UMLClass",
+									"_id": "AAAAAAGIBSnHmNAuy38=",
+									"_parent": {
+										"$ref": "AAAAAAGIBSu4INMbjHA="
+									},
+									"name": "addedHireInfo",
+									"stereotype": {
+										"$ref": "AAAAAAGIBSPUascUnUQ="
+									},
+									"operations": [
+										{
+											"_type": "UMLOperation",
+											"_id": "AAAAAAGIBSnHmNAvhZA=",
+											"_parent": {
+												"$ref": "AAAAAAGIBSnHmNAuy38="
+											},
+											"name": "showAddedHireInfoList()"
+										},
+										{
+											"_type": "UMLOperation",
+											"_id": "AAAAAAGIBSnHmNAwYCI=",
+											"_parent": {
+												"$ref": "AAAAAAGIBSnHmNAuy38="
+											},
+											"name": "showAddedHireInfo()"
+										}
+									]
+								},
+								{
+									"_type": "UMLClass",
+									"_id": "AAAAAAGIBSnHmNAxFVI=",
+									"_parent": {
+										"$ref": "AAAAAAGIBSu4INMbjHA="
+									},
+									"name": "addHireInfo",
+									"stereotype": {
+										"$ref": "AAAAAAGIBSPUascUnUQ="
+									},
+									"operations": [
+										{
+											"_type": "UMLOperation",
+											"_id": "AAAAAAGIBSnHmNAystk=",
+											"_parent": {
+												"$ref": "AAAAAAGIBSnHmNAxFVI="
+											},
+											"name": "createNewHireInfo()"
+										},
+										{
+											"_type": "UMLOperation",
+											"_id": "AAAAAAGIBSnHmNAzjrw=",
+											"_parent": {
+												"$ref": "AAAAAAGIBSnHmNAxFVI="
+											},
+											"name": "addNewHireInfo()"
+										}
+									]
+								}
+							]
 						}
 					]
 				},
@@ -33390,6 +33508,156 @@
 												"$ref": "AAAAAAGIBR5o37BVAZ0="
 											},
 											"name": "ApplyForEmploy"
+										}
+									]
+								}
+							]
+						},
+						{
+							"_type": "UMLPackage",
+							"_id": "AAAAAAGIBStevtMAHV0=",
+							"_parent": {
+								"$ref": "AAAAAAGIBIr1Og7t6rE="
+							},
+							"name": "Chanhee",
+							"ownedElements": [
+								{
+									"_type": "UMLClass",
+									"_id": "AAAAAAGIBSnHl9AabKQ=",
+									"_parent": {
+										"$ref": "AAAAAAGIBStevtMAHV0="
+									},
+									"name": "checkHireInfoUI",
+									"stereotype": {
+										"$ref": "AAAAAAGIBSPUascX/+U="
+									},
+									"operations": [
+										{
+											"_type": "UMLOperation",
+											"_id": "AAAAAAGIBSnHl9AbBaw=",
+											"_parent": {
+												"$ref": "AAAAAAGIBSnHl9AabKQ="
+											},
+											"name": "starInterface()"
+										},
+										{
+											"_type": "UMLOperation",
+											"_id": "AAAAAAGIBSnHl9Ac1O0=",
+											"_parent": {
+												"$ref": "AAAAAAGIBSnHl9AabKQ="
+											},
+											"name": "search()"
+										},
+										{
+											"_type": "UMLOperation",
+											"_id": "AAAAAAGIBSnHl9AdePw=",
+											"_parent": {
+												"$ref": "AAAAAAGIBSnHl9AabKQ="
+											},
+											"name": "showHireInfoList()"
+										},
+										{
+											"_type": "UMLOperation",
+											"_id": "AAAAAAGIBSnHl9AeySM=",
+											"_parent": {
+												"$ref": "AAAAAAGIBSnHl9AabKQ="
+											},
+											"name": "selectHireInfo()"
+										}
+									]
+								},
+								{
+									"_type": "UMLClass",
+									"_id": "AAAAAAGIBSnHl9AfOQY=",
+									"_parent": {
+										"$ref": "AAAAAAGIBStevtMAHV0="
+									},
+									"name": "addHireInfoUI",
+									"stereotype": {
+										"$ref": "AAAAAAGIBSPUascX/+U="
+									},
+									"operations": [
+										{
+											"_type": "UMLOperation",
+											"_id": "AAAAAAGIBSnHl9AgECc=",
+											"_parent": {
+												"$ref": "AAAAAAGIBSnHl9AfOQY="
+											},
+											"name": "startInerface()"
+										},
+										{
+											"_type": "UMLOperation",
+											"_id": "AAAAAAGIBSnHl9AhOjo=",
+											"_parent": {
+												"$ref": "AAAAAAGIBSnHl9AfOQY="
+											},
+											"name": "createNewHireInfo()"
+										}
+									]
+								},
+								{
+									"_type": "UMLClass",
+									"_id": "AAAAAAGIBSnHmNAlhZI=",
+									"_parent": {
+										"$ref": "AAAAAAGIBStevtMAHV0="
+									},
+									"name": "checkClosedHireInfoUI",
+									"stereotype": {
+										"$ref": "AAAAAAGIBSPUascX/+U="
+									},
+									"operations": [
+										{
+											"_type": "UMLOperation",
+											"_id": "AAAAAAGIBSnHmNAm3y0=",
+											"_parent": {
+												"$ref": "AAAAAAGIBSnHmNAlhZI="
+											},
+											"name": "startInterface()"
+										},
+										{
+											"_type": "UMLOperation",
+											"_id": "AAAAAAGIBSnHmNAnJR0=",
+											"_parent": {
+												"$ref": "AAAAAAGIBSnHmNAlhZI="
+											},
+											"name": "check()"
+										}
+									]
+								},
+								{
+									"_type": "UMLClass",
+									"_id": "AAAAAAGIBSnHmNAo2D0=",
+									"_parent": {
+										"$ref": "AAAAAAGIBStevtMAHV0="
+									},
+									"name": "checkAddedHireInfoUI",
+									"stereotype": {
+										"$ref": "AAAAAAGIBSPUascX/+U="
+									},
+									"operations": [
+										{
+											"_type": "UMLOperation",
+											"_id": "AAAAAAGIBSnHmNAp0do=",
+											"_parent": {
+												"$ref": "AAAAAAGIBSnHmNAo2D0="
+											},
+											"name": "startInterface()"
+										},
+										{
+											"_type": "UMLOperation",
+											"_id": "AAAAAAGIBSnHmNAq4JA=",
+											"_parent": {
+												"$ref": "AAAAAAGIBSnHmNAo2D0="
+											},
+											"name": "selectAddedHireInfo()"
+										},
+										{
+											"_type": "UMLOperation",
+											"_id": "AAAAAAGIBSnHmNArymI=",
+											"_parent": {
+												"$ref": "AAAAAAGIBSnHmNAo2D0="
+											},
+											"name": "showAddedHireInfo()"
 										}
 									]
 								}

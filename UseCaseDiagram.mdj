@@ -21031,7 +21031,7 @@
 											"top": 272,
 											"width": 85.0966796875,
 											"height": 13,
-											"text": "(from Model4)"
+											"text": "(from Unauth)"
 										},
 										{
 											"_type": "LabelView",
@@ -21211,7 +21211,7 @@
 											"top": 1072,
 											"width": 85.0966796875,
 											"height": 13,
-											"text": "(from Model4)"
+											"text": "(from Auth)"
 										},
 										{
 											"_type": "LabelView",
@@ -21391,7 +21391,7 @@
 											"top": -96,
 											"width": 85.0966796875,
 											"height": 13,
-											"text": "(from Model4)"
+											"text": "(from Auth)"
 										},
 										{
 											"_type": "LabelView",
@@ -21571,7 +21571,7 @@
 											"top": 528,
 											"width": 85.0966796875,
 											"height": 13,
-											"text": "(from Model4)"
+											"text": "(from Auth)"
 										},
 										{
 											"_type": "LabelView",
@@ -21978,7 +21978,7 @@
 											"top": 970,
 											"width": 93.8818359375,
 											"height": 13,
-											"text": "(from Model4)"
+											"text": "(from Auth)"
 										},
 										{
 											"_type": "LabelView",
@@ -22451,7 +22451,7 @@
 											"top": 640,
 											"width": 80.9072265625,
 											"height": 13,
-											"text": "(from Model4)"
+											"text": "(from Auth)"
 										},
 										{
 											"_type": "LabelView",
@@ -22924,7 +22924,7 @@
 											"top": 388,
 											"width": 80.9072265625,
 											"height": 13,
-											"text": "(from Model4)"
+											"text": "(from Unauth)"
 										},
 										{
 											"_type": "LabelView",
@@ -23123,7 +23123,7 @@
 											"top": -196,
 											"width": 80.9072265625,
 											"height": 13,
-											"text": "(from Model4)"
+											"text": "(from Unauth)"
 										},
 										{
 											"_type": "LabelView",
@@ -23322,7 +23322,7 @@
 											"top": -50,
 											"width": 80.9072265625,
 											"height": 13,
-											"text": "(from Model4)"
+											"text": "(from Unauth)"
 										},
 										{
 											"_type": "LabelView",
@@ -23521,7 +23521,7 @@
 											"top": 352,
 											"width": 80.9072265625,
 											"height": 13,
-											"text": "(from Model4)"
+											"text": "(from Unauth)"
 										},
 										{
 											"_type": "LabelView",
@@ -31920,281 +31920,301 @@
 					]
 				},
 				{
-					"_type": "UMLActor",
-					"_id": "AAAAAAGHb2tX7AstuK4=",
+					"_type": "UMLPackage",
+					"_id": "AAAAAAGIAqxq5LsqiVA=",
 					"_parent": {
 						"$ref": "AAAAAAGHb2tX6wpVBNE="
 					},
-					"name": "Unauthorized User",
+					"name": "Unauth",
 					"ownedElements": [
 						{
-							"_type": "UMLAssociation",
-							"_id": "AAAAAAGIAnMVgJechzE=",
+							"_type": "UMLUseCase",
+							"_id": "AAAAAAGIAnK0H5IoDRY=",
 							"_parent": {
-								"$ref": "AAAAAAGHb2tX7AstuK4="
+								"$ref": "AAAAAAGIAqxq5LsqiVA="
 							},
-							"end1": {
-								"_type": "UMLAssociationEnd",
-								"_id": "AAAAAAGIAnMVgJedb7A=",
-								"_parent": {
-									"$ref": "AAAAAAGIAnMVgJechzE="
-								},
-								"reference": {
-									"$ref": "AAAAAAGHb2tX7AstuK4="
-								}
-							},
-							"end2": {
-								"_type": "UMLAssociationEnd",
-								"_id": "AAAAAAGIAnMVgJeeCuE=",
-								"_parent": {
-									"$ref": "AAAAAAGIAnMVgJechzE="
-								},
-								"reference": {
-									"$ref": "AAAAAAGIAnK0H5IoDRY="
-								}
-							}
+							"name": "Sign in"
 						},
 						{
-							"_type": "UMLAssociation",
-							"_id": "AAAAAAGIAnMc35hyiDM=",
+							"_type": "UMLUseCase",
+							"_id": "AAAAAAGIAnK/w5I/Fig=",
 							"_parent": {
-								"$ref": "AAAAAAGHb2tX7AstuK4="
+								"$ref": "AAAAAAGIAqxq5LsqiVA="
 							},
-							"end1": {
-								"_type": "UMLAssociationEnd",
-								"_id": "AAAAAAGIAnMc35hz4Y0=",
-								"_parent": {
-									"$ref": "AAAAAAGIAnMc35hyiDM="
-								},
-								"reference": {
-									"$ref": "AAAAAAGHb2tX7AstuK4="
+							"name": "Sign up as Company",
+							"ownedElements": [
+								{
+									"_type": "UMLGeneralization",
+									"_id": "AAAAAAGIAnMuB5tpl7M=",
+									"_parent": {
+										"$ref": "AAAAAAGIAnK/w5I/Fig="
+									},
+									"source": {
+										"$ref": "AAAAAAGIAnK/w5I/Fig="
+									},
+									"target": {
+										"$ref": "AAAAAAGIAnDQTWWsVmo="
+									}
 								}
-							},
-							"end2": {
-								"_type": "UMLAssociationEnd",
-								"_id": "AAAAAAGIAnMc35h0q14=",
-								"_parent": {
-									"$ref": "AAAAAAGIAnMc35hyiDM="
-								},
-								"reference": {
-									"$ref": "AAAAAAGIAnK/w5I/Fig="
-								}
-							}
+							]
 						},
 						{
-							"_type": "UMLAssociation",
-							"_id": "AAAAAAGIAnMjaZlyZZA=",
+							"_type": "UMLUseCase",
+							"_id": "AAAAAAGIAnLKlZJYNG4=",
 							"_parent": {
-								"$ref": "AAAAAAGHb2tX7AstuK4="
+								"$ref": "AAAAAAGIAqxq5LsqiVA="
 							},
-							"end1": {
-								"_type": "UMLAssociationEnd",
-								"_id": "AAAAAAGIAnMjaZlzTgQ=",
-								"_parent": {
-									"$ref": "AAAAAAGIAnMjaZlyZZA="
-								},
-								"reference": {
-									"$ref": "AAAAAAGHb2tX7AstuK4="
+							"name": "Sign up as Individual",
+							"ownedElements": [
+								{
+									"_type": "UMLGeneralization",
+									"_id": "AAAAAAGIAnM4cZ0exRw=",
+									"_parent": {
+										"$ref": "AAAAAAGIAnLKlZJYNG4="
+									},
+									"source": {
+										"$ref": "AAAAAAGIAnLKlZJYNG4="
+									},
+									"target": {
+										"$ref": "AAAAAAGIAnDQTWWsVmo="
+									}
 								}
-							},
-							"end2": {
-								"_type": "UMLAssociationEnd",
-								"_id": "AAAAAAGIAnMjaZl0ahw=",
-								"_parent": {
-									"$ref": "AAAAAAGIAnMjaZlyZZA="
-								},
-								"reference": {
-									"$ref": "AAAAAAGIAnLKlZJYNG4="
-								}
-							}
-						}
-					]
-				},
-				{
-					"_type": "UMLActor",
-					"_id": "AAAAAAGHb2tX7As3CKg=",
-					"_parent": {
-						"$ref": "AAAAAAGHb2tX6wpVBNE="
-					},
-					"name": "Individual Member",
-					"ownedElements": [
-						{
-							"_type": "UMLGeneralization",
-							"_id": "AAAAAAGHb2tX7As4qM8=",
-							"_parent": {
-								"$ref": "AAAAAAGHb2tX7As3CKg="
-							},
-							"source": {
-								"$ref": "AAAAAAGHb2tX7As3CKg="
-							},
-							"target": {
-								"$ref": "AAAAAAGHb2tX7AtBRQk="
-							}
+							]
 						},
 						{
-							"_type": "UMLAssociation",
-							"_id": "AAAAAAGHb2tX7As59J8=",
+							"_type": "UMLUseCase",
+							"_id": "AAAAAAGIAnDQTWWsVmo=",
 							"_parent": {
-								"$ref": "AAAAAAGHb2tX7As3CKg="
+								"$ref": "AAAAAAGIAqxq5LsqiVA="
 							},
-							"end1": {
-								"_type": "UMLAssociationEnd",
-								"_id": "AAAAAAGHb2tX7As6Qmg=",
-								"_parent": {
-									"$ref": "AAAAAAGHb2tX7As59J8="
-								},
-								"reference": {
-									"$ref": "AAAAAAGHb2tX7AtBRQk="
-								}
+							"name": "Sign up"
+						},
+						{
+							"_type": "UMLActor",
+							"_id": "AAAAAAGHb2tX7AstuK4=",
+							"_parent": {
+								"$ref": "AAAAAAGIAqxq5LsqiVA="
 							},
-							"end2": {
-								"_type": "UMLAssociationEnd",
-								"_id": "AAAAAAGHb2tX7As7VOE=",
-								"_parent": {
-									"$ref": "AAAAAAGHb2tX7As59J8="
+							"name": "Unauthorized User",
+							"ownedElements": [
+								{
+									"_type": "UMLAssociation",
+									"_id": "AAAAAAGIAnMVgJechzE=",
+									"_parent": {
+										"$ref": "AAAAAAGHb2tX7AstuK4="
+									},
+									"end1": {
+										"_type": "UMLAssociationEnd",
+										"_id": "AAAAAAGIAnMVgJedb7A=",
+										"_parent": {
+											"$ref": "AAAAAAGIAnMVgJechzE="
+										},
+										"reference": {
+											"$ref": "AAAAAAGHb2tX7AstuK4="
+										}
+									},
+									"end2": {
+										"_type": "UMLAssociationEnd",
+										"_id": "AAAAAAGIAnMVgJeeCuE=",
+										"_parent": {
+											"$ref": "AAAAAAGIAnMVgJechzE="
+										},
+										"reference": {
+											"$ref": "AAAAAAGIAnK0H5IoDRY="
+										}
+									}
 								},
-								"reference": {
-									"$ref": "AAAAAAGHb2tX7AtH/KU="
+								{
+									"_type": "UMLAssociation",
+									"_id": "AAAAAAGIAnMc35hyiDM=",
+									"_parent": {
+										"$ref": "AAAAAAGHb2tX7AstuK4="
+									},
+									"end1": {
+										"_type": "UMLAssociationEnd",
+										"_id": "AAAAAAGIAnMc35hz4Y0=",
+										"_parent": {
+											"$ref": "AAAAAAGIAnMc35hyiDM="
+										},
+										"reference": {
+											"$ref": "AAAAAAGHb2tX7AstuK4="
+										}
+									},
+									"end2": {
+										"_type": "UMLAssociationEnd",
+										"_id": "AAAAAAGIAnMc35h0q14=",
+										"_parent": {
+											"$ref": "AAAAAAGIAnMc35hyiDM="
+										},
+										"reference": {
+											"$ref": "AAAAAAGIAnK/w5I/Fig="
+										}
+									}
+								},
+								{
+									"_type": "UMLAssociation",
+									"_id": "AAAAAAGIAnMjaZlyZZA=",
+									"_parent": {
+										"$ref": "AAAAAAGHb2tX7AstuK4="
+									},
+									"end1": {
+										"_type": "UMLAssociationEnd",
+										"_id": "AAAAAAGIAnMjaZlzTgQ=",
+										"_parent": {
+											"$ref": "AAAAAAGIAnMjaZlyZZA="
+										},
+										"reference": {
+											"$ref": "AAAAAAGHb2tX7AstuK4="
+										}
+									},
+									"end2": {
+										"_type": "UMLAssociationEnd",
+										"_id": "AAAAAAGIAnMjaZl0ahw=",
+										"_parent": {
+											"$ref": "AAAAAAGIAnMjaZlyZZA="
+										},
+										"reference": {
+											"$ref": "AAAAAAGIAnLKlZJYNG4="
+										}
+									}
 								}
-							}
+							]
 						}
 					]
 				},
 				{
-					"_type": "UMLActor",
-					"_id": "AAAAAAGHb2tX7As8Fzs=",
+					"_type": "UMLPackage",
+					"_id": "AAAAAAGIAqzbCL/6Nho=",
 					"_parent": {
 						"$ref": "AAAAAAGHb2tX6wpVBNE="
 					},
-					"name": "Company Member",
+					"name": "Auth",
 					"ownedElements": [
 						{
-							"_type": "UMLGeneralization",
-							"_id": "AAAAAAGHb2tX7As9bAU=",
+							"_type": "UMLActor",
+							"_id": "AAAAAAGHb2tX7As8Fzs=",
 							"_parent": {
-								"$ref": "AAAAAAGHb2tX7As8Fzs="
+								"$ref": "AAAAAAGIAqzbCL/6Nho="
 							},
-							"source": {
-								"$ref": "AAAAAAGHb2tX7As8Fzs="
-							},
-							"target": {
-								"$ref": "AAAAAAGHb2tX7AtBRQk="
-							}
-						}
-					]
-				},
-				{
-					"_type": "UMLActor",
-					"_id": "AAAAAAGHb2tX7AtBRQk=",
-					"_parent": {
-						"$ref": "AAAAAAGHb2tX6wpVBNE="
-					},
-					"name": "Member"
-				},
-				{
-					"_type": "UMLUseCase",
-					"_id": "AAAAAAGHb2tX7AtH/KU=",
-					"_parent": {
-						"$ref": "AAAAAAGHb2tX6wpVBNE="
-					},
-					"name": "Withdrawal"
-				},
-				{
-					"_type": "UMLUseCase",
-					"_id": "AAAAAAGIAnABVVkdeek=",
-					"_parent": {
-						"$ref": "AAAAAAGHb2tX6wpVBNE="
-					},
-					"name": "Sign out",
-					"ownedElements": [
-						{
-							"_type": "UMLAssociation",
-							"_id": "AAAAAAGIAnABVVkeNh0=",
-							"_parent": {
-								"$ref": "AAAAAAGIAnABVVkdeek="
-							},
-							"end1": {
-								"_type": "UMLAssociationEnd",
-								"_id": "AAAAAAGIAnABVVkfx6M=",
-								"_parent": {
-									"$ref": "AAAAAAGIAnABVVkeNh0="
-								},
-								"reference": {
-									"$ref": "AAAAAAGIAnABVVkdeek="
+							"name": "Company Member",
+							"ownedElements": [
+								{
+									"_type": "UMLGeneralization",
+									"_id": "AAAAAAGHb2tX7As9bAU=",
+									"_parent": {
+										"$ref": "AAAAAAGHb2tX7As8Fzs="
+									},
+									"source": {
+										"$ref": "AAAAAAGHb2tX7As8Fzs="
+									},
+									"target": {
+										"$ref": "AAAAAAGHb2tX7AtBRQk="
+									}
 								}
+							]
+						},
+						{
+							"_type": "UMLActor",
+							"_id": "AAAAAAGHb2tX7AtBRQk=",
+							"_parent": {
+								"$ref": "AAAAAAGIAqzbCL/6Nho="
 							},
-							"end2": {
-								"_type": "UMLAssociationEnd",
-								"_id": "AAAAAAGIAnABVVkgJ+k=",
-								"_parent": {
-									"$ref": "AAAAAAGIAnABVVkeNh0="
+							"name": "Member"
+						},
+						{
+							"_type": "UMLActor",
+							"_id": "AAAAAAGHb2tX7As3CKg=",
+							"_parent": {
+								"$ref": "AAAAAAGIAqzbCL/6Nho="
+							},
+							"name": "Individual Member",
+							"ownedElements": [
+								{
+									"_type": "UMLGeneralization",
+									"_id": "AAAAAAGHb2tX7As4qM8=",
+									"_parent": {
+										"$ref": "AAAAAAGHb2tX7As3CKg="
+									},
+									"source": {
+										"$ref": "AAAAAAGHb2tX7As3CKg="
+									},
+									"target": {
+										"$ref": "AAAAAAGHb2tX7AtBRQk="
+									}
 								},
-								"reference": {
-									"$ref": "AAAAAAGHb2tX7AtBRQk="
+								{
+									"_type": "UMLAssociation",
+									"_id": "AAAAAAGHb2tX7As59J8=",
+									"_parent": {
+										"$ref": "AAAAAAGHb2tX7As3CKg="
+									},
+									"end1": {
+										"_type": "UMLAssociationEnd",
+										"_id": "AAAAAAGHb2tX7As6Qmg=",
+										"_parent": {
+											"$ref": "AAAAAAGHb2tX7As59J8="
+										},
+										"reference": {
+											"$ref": "AAAAAAGHb2tX7AtBRQk="
+										}
+									},
+									"end2": {
+										"_type": "UMLAssociationEnd",
+										"_id": "AAAAAAGHb2tX7As7VOE=",
+										"_parent": {
+											"$ref": "AAAAAAGHb2tX7As59J8="
+										},
+										"reference": {
+											"$ref": "AAAAAAGHb2tX7AtH/KU="
+										}
+									}
 								}
-							}
-						}
-					]
-				},
-				{
-					"_type": "UMLUseCase",
-					"_id": "AAAAAAGIAnDQTWWsVmo=",
-					"_parent": {
-						"$ref": "AAAAAAGHb2tX6wpVBNE="
-					},
-					"name": "Sign up"
-				},
-				{
-					"_type": "UMLUseCase",
-					"_id": "AAAAAAGIAnK0H5IoDRY=",
-					"_parent": {
-						"$ref": "AAAAAAGHb2tX6wpVBNE="
-					},
-					"name": "Sign in"
-				},
-				{
-					"_type": "UMLUseCase",
-					"_id": "AAAAAAGIAnK/w5I/Fig=",
-					"_parent": {
-						"$ref": "AAAAAAGHb2tX6wpVBNE="
-					},
-					"name": "Sign up as Company",
-					"ownedElements": [
+							]
+						},
 						{
-							"_type": "UMLGeneralization",
-							"_id": "AAAAAAGIAnMuB5tpl7M=",
+							"_type": "UMLUseCase",
+							"_id": "AAAAAAGHb2tX7AtH/KU=",
 							"_parent": {
-								"$ref": "AAAAAAGIAnK/w5I/Fig="
+								"$ref": "AAAAAAGIAqzbCL/6Nho="
 							},
-							"source": {
-								"$ref": "AAAAAAGIAnK/w5I/Fig="
-							},
-							"target": {
-								"$ref": "AAAAAAGIAnDQTWWsVmo="
-							}
-						}
-					]
-				},
-				{
-					"_type": "UMLUseCase",
-					"_id": "AAAAAAGIAnLKlZJYNG4=",
-					"_parent": {
-						"$ref": "AAAAAAGHb2tX6wpVBNE="
-					},
-					"name": "Sign up as Individual",
-					"ownedElements": [
+							"name": "Withdrawal"
+						},
 						{
-							"_type": "UMLGeneralization",
-							"_id": "AAAAAAGIAnM4cZ0exRw=",
+							"_type": "UMLUseCase",
+							"_id": "AAAAAAGIAnABVVkdeek=",
 							"_parent": {
-								"$ref": "AAAAAAGIAnLKlZJYNG4="
+								"$ref": "AAAAAAGIAqzbCL/6Nho="
 							},
-							"source": {
-								"$ref": "AAAAAAGIAnLKlZJYNG4="
-							},
-							"target": {
-								"$ref": "AAAAAAGIAnDQTWWsVmo="
-							}
+							"name": "Sign out",
+							"ownedElements": [
+								{
+									"_type": "UMLAssociation",
+									"_id": "AAAAAAGIAnABVVkeNh0=",
+									"_parent": {
+										"$ref": "AAAAAAGIAnABVVkdeek="
+									},
+									"end1": {
+										"_type": "UMLAssociationEnd",
+										"_id": "AAAAAAGIAnABVVkfx6M=",
+										"_parent": {
+											"$ref": "AAAAAAGIAnABVVkeNh0="
+										},
+										"reference": {
+											"$ref": "AAAAAAGIAnABVVkdeek="
+										}
+									},
+									"end2": {
+										"_type": "UMLAssociationEnd",
+										"_id": "AAAAAAGIAnABVVkgJ+k=",
+										"_parent": {
+											"$ref": "AAAAAAGIAnABVVkeNh0="
+										},
+										"reference": {
+											"$ref": "AAAAAAGHb2tX7AtBRQk="
+										}
+									}
+								}
+							]
 						}
 					]
 				}
@@ -32412,9 +32432,9 @@
 													"font": "Arial;13;0",
 													"left": 32.72998046875,
 													"top": 13,
-													"width": 115.9052734375,
+													"width": 118.79345703125,
 													"height": 13,
-													"text": "SequenceDiagram1"
+													"text": "Sign up as company"
 												},
 												{
 													"_type": "LabelView",
@@ -32573,9 +32593,9 @@
 													"font": "Arial;13;0",
 													"left": 32.72998046875,
 													"top": 13,
-													"width": 115.9052734375,
+													"width": 120.2470703125,
 													"height": 13,
-													"text": "SequenceDiagram1"
+													"text": "Sign up as individual"
 												},
 												{
 													"_type": "LabelView",

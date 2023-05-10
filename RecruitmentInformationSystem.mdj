@@ -32498,6 +32498,17 @@
 									"name": "checkDuplicated"
 								}
 							]
+						},
+						{
+							"_type": "UMLClass",
+							"_id": "AAAAAAGIBTShMYdyQaE=",
+							"_parent": {
+								"$ref": "AAAAAAGIBInx6A3dPBA="
+							},
+							"name": "JobInfo",
+							"stereotype": {
+								"$ref": "AAAAAAGIBSPUZsY9CPw="
+							}
 						}
 					]
 				},
@@ -33050,6 +33061,38 @@
 											"name": "addNewHireInfo()"
 										}
 									]
+								}
+							]
+						},
+						{
+							"_type": "UMLPackage",
+							"_id": "AAAAAAGIBTW8hI6zNfE=",
+							"_parent": {
+								"$ref": "AAAAAAGIBIp/KQ5NHGY="
+							},
+							"name": "Hochang",
+							"ownedElements": [
+								{
+									"_type": "UMLClass",
+									"_id": "AAAAAAGIBTUZJ41E6AM=",
+									"_parent": {
+										"$ref": "AAAAAAGIBTW8hI6zNfE="
+									},
+									"name": "Statistic",
+									"stereotype": {
+										"$ref": "AAAAAAGIBSPUascUnUQ="
+									}
+								},
+								{
+									"_type": "UMLClass",
+									"_id": "AAAAAAGIBTUIHIzzL7E=",
+									"_parent": {
+										"$ref": "AAAAAAGIBTW8hI6zNfE="
+									},
+									"name": "ApplyInfo",
+									"stereotype": {
+										"$ref": "AAAAAAGIBSPUascUnUQ="
+									}
 								}
 							]
 						}
@@ -33660,6 +33703,38 @@
 											"name": "showAddedHireInfo()"
 										}
 									]
+								}
+							]
+						},
+						{
+							"_type": "UMLPackage",
+							"_id": "AAAAAAGIBTX6aI9J9Ho=",
+							"_parent": {
+								"$ref": "AAAAAAGIBIr1Og7t6rE="
+							},
+							"name": "Hochang",
+							"ownedElements": [
+								{
+									"_type": "UMLClass",
+									"_id": "AAAAAAGIBTYf/pAlPTo=",
+									"_parent": {
+										"$ref": "AAAAAAGIBTX6aI9J9Ho="
+									},
+									"name": "ApplyInfoUI",
+									"stereotype": {
+										"$ref": "AAAAAAGIBSPUascX/+U="
+									}
+								},
+								{
+									"_type": "UMLClass",
+									"_id": "AAAAAAGIBTYqqJBZyJM=",
+									"_parent": {
+										"$ref": "AAAAAAGIBTX6aI9J9Ho="
+									},
+									"name": "StaticsticUI",
+									"stereotype": {
+										"$ref": "AAAAAAGIBSPUascX/+U="
+									}
 								}
 							]
 						}

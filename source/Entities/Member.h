@@ -31,7 +31,7 @@ Boolean matchIDPW(string info);
     
 void deleteMember();
     
-List[Recruit] getRecruits();
+vector<Recruit> getRecruits();
     
 virtual string analysis() = 0;
 

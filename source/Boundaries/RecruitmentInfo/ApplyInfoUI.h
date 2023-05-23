@@ -5,13 +5,18 @@
 
 #ifndef _APPLYINFOUI_H
 #define _APPLYINFOUI_H
+#include "ApplyInfo.h"
 
 class ApplyInfoUI {
+private:
+    ApplyInfo *applyInfo;
+    
 public: 
+    ApplyInfoUI(ApplyInfo *applyInfo);
     
-void startInterface();
+    void startInterface(string print);
     
-void selectCancel();
+    void selectCancel(string businessNumber);
 };
 
 #endif //_APPLYINFOUI_H

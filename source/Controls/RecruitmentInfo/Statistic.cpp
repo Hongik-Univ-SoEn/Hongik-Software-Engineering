@@ -25,7 +25,7 @@ void Statistic::analysis() {
 
 /*
   함수 이름 : Statistic::Statistic(Member *member)
-  기능	   : 멤버 변수 member 초기화
+  기능	   : 생성자
   전달 인자 : Member *member
   반환값    : 없음
 */

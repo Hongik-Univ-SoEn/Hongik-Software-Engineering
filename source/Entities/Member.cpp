@@ -53,8 +53,8 @@ void Member::deleteMember() {
 /**
  * @return List[Recruit]
  */
-List[Recruit] Member::getRecruits() {
-    return null;
+vector<Recruit> Member::getRecruits() {
+    return recruits;
 }
 
 virtual void Member::analysis(){

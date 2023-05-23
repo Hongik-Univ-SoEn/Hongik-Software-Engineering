@@ -14,10 +14,10 @@ using namespace std;
 
 
 /**
- * @return String
+ * @return string
  */
 string IndividualMember::getInfo() {
-    return "";
+    return " ";
 }
 
 /**
@@ -43,14 +43,38 @@ void IndividualMember::addToApplyList(Recruit apply) {
 
 }
 
-void IndividualMember::getRecruit() {
-
+/*
+	함수 이름 : IndividualMember::getRecruits()
+	기능	   : recruits 반환 기능 제공
+	전달 인자 : 없음
+	반환값    : 없음
+*/
+vector<Recruit> IndividualMember::getRecruits() {
+    return this->recruits;
 }
 
-void IndividualMember::cancelApply() {
-
+/*
+	함수 이름 : IndividualMember::cancelApply(string businessNumber)
+	기능	   : 지원 취소 기능 제공
+	전달 인자 : string businessNumber
+	반환값    : 없음
+*/
+void IndividualMember::cancelApply(string businessNumber) {
+    for(int i = 0; i < recruits.size(); i++) {
+        if(recruits[i].getBusinessNumber() == businessNumber) {
+            recruits[i].setNumOfApply(recruits[i].getNumOfApply() - 1);
+            recruits.erase(recruits.begin() + i);
+            break;
+        }
+    }
 }
 
+/*
+    함수 이름 : IndividualMember::analysis()
+    기능	   : 지원한 채용 정보 분석 기능 제공
+    전달 인자 : 없음
+    반환값    : string
+*/
 string IndividualMember::analysis() {
     // 카운트 하기위한 map
     map<string,int> count;
@@ -62,11 +86,11 @@ string IndividualMember::analysis() {
             count.insert({recruits[i].getWorkField(),1});
     }
 
-    string forReturn = "";
+    string result = "> ";
     for(auto it = count.begin(); it != count.end(); it++) {
-        forReturn += it->first + " " + to_string(it->second) + "\n";
+        result += it->first + " " + to_string(it->second) + "\n";
     }
 
-    return forReturn;
+    return result;
 
 }

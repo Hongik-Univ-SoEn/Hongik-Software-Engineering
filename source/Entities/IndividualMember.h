@@ -31,9 +31,9 @@ public:
      */
     void addToApplyList(Recruit apply);
         
-    void getRecruit();
+    vector<Recruit> getRecruits();
         
-    void cancelApply();
+    void cancelApply(string businessNumber);
 
     virtual string analysis();
 

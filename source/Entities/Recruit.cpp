@@ -4,6 +4,8 @@
 
 
 #include "Recruit.h"
+#include <iostream>
+using namespace std;
 
 /**
  * Recruit implementation
@@ -21,7 +23,7 @@ string Recruit::getDetailInfo() {
  * @param num
  */
 void Recruit::setNumsOfApply(int num) {
-
+    numsOfApply = num;
 }
 
 /**
@@ -43,6 +45,7 @@ string Recruit::getWorkField() {
     return workField;
 }
 
-int Recruit::getNumOfHire() {
-    return numOfHire;
+int Recruit::getNumOfApply() {
+    return numsOfApply;
 }
+

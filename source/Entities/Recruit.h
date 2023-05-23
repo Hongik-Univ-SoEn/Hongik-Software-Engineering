@@ -9,22 +9,22 @@
 class Recruit {
 public: 
     
-string getDetailInfo();
-    
-/**
- * @param num
- */
-void setNumsOfApply(int num);
-    
-/**
- * @param info
- */
-void createRecruit(string info);
-    
-List[string] getRecruitInfo();
+    string getDetailInfo();
+        
+    /**
+     * @param num
+     */
+    void setNumsOfApply(int num);
+        
+    /**
+     * @param info
+     */
+    void createRecruit(string info);
+        
+    List[string] getRecruitInfo();
 
-string getWorkField();
-int getNumOfHire();
+    string getWorkField();
+    int getNumOfApply();
 
 private: 
     string companyName;

@@ -5,11 +5,19 @@
 
 #ifndef _APPLYINFO_H
 #define _APPLYINFO_H
+#include "ApplyInfoUI.h"
+#include "Member.h"
+
 
 class ApplyInfo {
+private:
+    ApplyInfoUI *applyInfoUI;
+    Member *member;
+
+    string makeStringForPrint();
 public: 
-    
-void cancelApply();
+    ApplyInfo(Member *member);
+    void cancelApply(string businessNumber);
 };
 
 #endif //_APPLYINFO_H

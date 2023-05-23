@@ -30,7 +30,8 @@ void deleteMember();
     
 List[Recruit] getRecruits();
     
-void analysis();
+virtual void analysis() = 0;
+
 private: 
     String id;
     String pw;

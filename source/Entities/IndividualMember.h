@@ -11,30 +11,33 @@
 
 class IndividualMember: public Member {
 public: 
-    
-String getInfo();
-    
-/**
- * @param info
- */
-IndividualMember createMember(String info);
-    
-/**
- * @param info
- */
-Boolean checkDuplicated(String info);
-    
-/**
- * @param apply
- */
-void addToApplyList(Recruit apply);
-    
-void getRecruit();
-    
-void cancelApply();
+        
+    String getInfo();
+        
+    /**
+     * @param info
+     */
+    IndividualMember createMember(String info);
+        
+    /**
+     * @param info
+     */
+    Boolean checkDuplicated(String info);
+        
+    /**
+     * @param apply
+     */
+    void addToApplyList(Recruit apply);
+        
+    void getRecruit();
+        
+    void cancelApply();
+
+    virtual void analysis();
+
 private: 
-    String name;
-    String socialSecurityNumber;
+        string name;
+        string socialSecurityNumber;
 };
 
 #endif //_INDIVIDUALMEMBER_H

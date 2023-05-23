@@ -7,9 +7,11 @@
 #define _STATISTIC_H
 
 class Statistic {
+private:
+    Member member;
 public: 
     
-void analysis();
+    void analysis();
 };
 
 #endif //_STATISTIC_H

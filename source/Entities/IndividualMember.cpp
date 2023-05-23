@@ -47,3 +47,7 @@ void IndividualMember::getRecruit() {
 void IndividualMember::cancelApply() {
 
 }
+
+virtual void IndividualMember::analysis() {
+    
+}

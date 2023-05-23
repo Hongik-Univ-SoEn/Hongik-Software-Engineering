@@ -4,6 +4,11 @@
 
 
 #include "Member.h"
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+
 
 /**
  * Member implementation
@@ -14,7 +19,7 @@
  * @param info
  * @return Member
  */
-virtual Member Member::createMember(String info) {
+virtual Member Member::createMember(string info) {
     return null;
 }
 
@@ -52,6 +57,6 @@ List[Recruit] Member::getRecruits() {
     return null;
 }
 
-void Member::analysis() {
-
+virtual void Member::analysis(){
+    
 }

@@ -42,3 +42,7 @@ List[string] Recruit::getRecruitInfo() {
 string Recruit::getWorkField() {
     return workField;
 }
+
+int Recruit::getNumOfHire() {
+    return numOfHire;
+}

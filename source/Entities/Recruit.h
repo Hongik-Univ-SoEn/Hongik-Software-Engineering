@@ -24,6 +24,7 @@ void createRecruit(string info);
 List[string] getRecruitInfo();
 
 string getWorkField();
+int getNumOfHire();
 
 private: 
     string companyName;

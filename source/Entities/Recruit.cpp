@@ -11,16 +11,16 @@
 
 
 /**
- * @return String
+ * @return string
  */
-String Recruit::getDetailInfo() {
+string Recruit::getDetailInfo() {
     return "";
 }
 
 /**
  * @param num
  */
-void Recruit::setNumsOfApply(Integer num) {
+void Recruit::setNumsOfApply(int num) {
 
 }
 
@@ -28,13 +28,17 @@ void Recruit::setNumsOfApply(Integer num) {
  * @param info
  * @return void
  */
-void Recruit::createRecruit(String info) {
+void Recruit::createRecruit(string info) {
     return;
 }
 
 /**
- * @return List[String]
+ * @return List[string]
  */
-List[String] Recruit::getRecruitInfo() {
+List[string] Recruit::getRecruitInfo() {
     return null;
+}
+
+string Recruit::getWorkField() {
+    return workField;
 }

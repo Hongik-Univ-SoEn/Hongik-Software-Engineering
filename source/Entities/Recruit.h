@@ -9,26 +9,29 @@
 class Recruit {
 public: 
     
-String getDetailInfo();
+string getDetailInfo();
     
 /**
  * @param num
  */
-void setNumsOfApply(Integer num);
+void setNumsOfApply(int num);
     
 /**
  * @param info
  */
-void createRecruit(String info);
+void createRecruit(string info);
     
-List[String] getRecruitInfo();
+List[string] getRecruitInfo();
+
+string getWorkField();
+
 private: 
-    String companyName;
-    String workField;
-    Integer numOfHire;
-    String deadline;
-    Integer numsOfApply;
-    String businessNumber;
+    string companyName;
+    string workField;
+    int numOfHire;
+    string deadline;
+    int numsOfApply;
+    string businessNumber;
 };
 
 #endif //_RECRUIT_H

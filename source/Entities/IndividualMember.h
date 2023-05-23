@@ -7,22 +7,24 @@
 #define _INDIVIDUALMEMBER_H
 
 #include "Member.h"
+#include <string>
+using namespace std;
 
 
 class IndividualMember: public Member {
 public: 
         
-    String getInfo();
+    string getInfo();
         
     /**
      * @param info
      */
-    IndividualMember createMember(String info);
+    IndividualMember createMember(string info);
         
     /**
      * @param info
      */
-    Boolean checkDuplicated(String info);
+    bool checkDuplicated(string info);
         
     /**
      * @param apply
@@ -33,7 +35,7 @@ public:
         
     void cancelApply();
 
-    virtual void analysis();
+    virtual string analysis();
 
 private: 
         string name;

@@ -5,12 +5,14 @@
 
 #ifndef _STATISTIC_H
 #define _STATISTIC_H
+#include "Member.h"
+#include "StatisticUI.h"
 
 class Statistic {
 private:
-    Member member;
+    Member *member;
 public: 
-    
+    Statistic(Member *member);
     void analysis();
 };
 

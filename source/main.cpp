@@ -85,6 +85,7 @@ void doTask()
 			switch (menu_level_2) {
 			case 1:
 				// 지원 정보 통계
+                
 				break;
 			}
 		case 6:

@@ -2,21 +2,26 @@
  * Project 채용 정보 시스템
  */
 
+#include<iostream>
+#include<string>
+#include <SearchRecruitByCompanyNameUI.h>
 
-#include "SearchRecruitByCompanyNameUI.h"
+using namespace std;
 
-/**
- * SearchRecruitByCompanyNameUI implementation
- */
+void SearchRecruitByCompanyNameUI::searchRecruitByCompany(string companyName) {
+    SearchRecruitByCompanyName* temp =  this->searchRecruitByCompanyName;
+    vector<string> recruitInfo = temp->getRecruitByCompanyName(companyName);
+    int len = recruitInfo.size();
+    for (int i=0;i<len;i++) {
+        cout<<recruitInfo[i]<< endl;
+    }
+}
 
-
-/**
- * @param companyName
- */
-void SearchRecruitByCompanyNameUI::searchRecruitByCompany(String companyName) {
-
+void SearchRecruitByCompanyNameUI::setSearchRecruitByCompanyName(SearchRecruitByCompanyName* searchRecruitByCompanyName){
+    this->searchRecruitByCompanyName = searchRecruitByCompanyName;
 }
 
 void SearchRecruitByCompanyNameUI::startInterface() {
 
 }
+

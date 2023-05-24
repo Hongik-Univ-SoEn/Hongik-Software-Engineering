@@ -7,12 +7,37 @@
 #define _INDIVIDUALMEMBER_H
 
 #include "Member.h"
+<<<<<<< HEAD
+#include<string>
+#include<vector>
+=======
 #include <string>
 using namespace std;
+>>>>>>> 3ecfca7d9dd06100f637e2047a97470e3c10e5a0
 
 
-class IndividualMember: public Member {
+class IndividualMember : public Member {
 public: 
+<<<<<<< HEAD
+    
+    // string getInfo();
+    
+
+    // virtual IndividualMember createMember(string info);
+
+    // bool checkDuplicated(string info);
+    
+
+    void addToApplyList(Recruit apply);
+
+    void getRecruit();
+
+    void cancelApply();
+private: 
+    string name;
+    string socialSecurityNumber;
+    vector<Recruit> recruitList;
+=======
         
     string getInfo();
         
@@ -40,6 +65,7 @@ public:
 private: 
         string name;
         string socialSecurityNumber;
+>>>>>>> 3ecfca7d9dd06100f637e2047a97470e3c10e5a0
 };
 
 #endif //_INDIVIDUALMEMBER_H

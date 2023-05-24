@@ -1,18 +1,25 @@
-/**
- * Project 채용 정보 시스템
- */
-
 
 #include "Member.h"
 #include <iostream>
 #include <map>
 using namespace std;
 
-/**
- * IndividualMember implementation
- */
+
+// string IndividualMember::getInfo() {
+//     return "";
+// }
+
+<<<<<<< HEAD
+// IndividualMember Member::createMember(string info) {
+//     IndividualMember i = new IndividualMember();
+//     return i
+// }
 
 
+// bool IndividualMember::checkDuplicated(string info) {
+//     return true;
+// }
+=======
 /**
  * @return string
  */
@@ -35,12 +42,11 @@ IndividualMember IndividualMember::createMember(string info) {
 Boolean IndividualMember::checkDuplicated(string info) {
     return null;
 }
+>>>>>>> 3ecfca7d9dd06100f637e2047a97470e3c10e5a0
 
-/**
- * @param apply
- */
+
 void IndividualMember::addToApplyList(Recruit apply) {
-
+    this->recruitList.push_back(apply);
 }
 
 /*

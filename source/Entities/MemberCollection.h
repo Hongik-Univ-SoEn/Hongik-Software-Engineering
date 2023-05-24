@@ -1,24 +1,20 @@
-/**
- * Project 채용 정보 시스템
- */
 
 
 #ifndef _MEMBERCOLLECTION_H
 #define _MEMBERCOLLECTION_H
-
+#include<string>
+#include<Member.h>
+using namespace std;
 class MemberCollection {
 public: 
     
-void addMember();
+    void addMember();
     
-/**
- * @param info
- */
-Member findMember(String info);
+    Member findMember(string info);
     
-void removeMember();
+    void removeMember();
 private: 
-    vector<Member> member;
+   Member* member;
 };
 
 #endif //_MEMBERCOLLECTION_H

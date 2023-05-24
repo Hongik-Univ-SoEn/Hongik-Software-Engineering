@@ -1,9 +1,16 @@
 #include <stdio.h>
 #include <string.h>
 
+#include<SearchRecruitByCompanyNameUI.h>
+#include<SearchRecruitByCompanyName.h>
+#include<ApplyUI.h>
+#include<Apply.h>
+#include<RecruitCollection.h>
 #define MAX_STRING 32
 #define INPUT_FILE_NAME "input.txt"
 #define OUTPUT_FILE_NAME "output.txt"
+
+
 
 void doTask();
 void program_exit();

@@ -6,10 +6,33 @@
 #ifndef _RECRUIT_H
 #define _RECRUIT_H
 
+
+#include <string>
+#include<vector>
+using namespace std;
+
 class Recruit {
 public: 
     
     string getDetailInfo();
+<<<<<<< HEAD
+    
+
+    void addNumsOfApply();
+    
+
+    void createRecruit(string info);
+    
+    vector<string> getRecruitInfo(); ///구현 ok
+
+    string getCompanyName(); ///구현 ok
+    string getBusinessNumber();
+    string getWorkField();
+    int getNumOfHire();
+    string getDeadline();
+    int getNumsOfApply();
+   
+=======
         
     /**
      * @param num
@@ -25,6 +48,7 @@ public:
 
     string getWorkField();
     int getNumOfApply();
+>>>>>>> 3ecfca7d9dd06100f637e2047a97470e3c10e5a0
 
 private: 
     string companyName;
@@ -33,6 +57,10 @@ private:
     string deadline;
     int numsOfApply;
     string businessNumber;
+<<<<<<< HEAD
+    
+=======
+>>>>>>> 3ecfca7d9dd06100f637e2047a97470e3c10e5a0
 };
 
 #endif //_RECRUIT_H

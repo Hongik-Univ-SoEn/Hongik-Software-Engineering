@@ -1,3 +1,39 @@
+<<<<<<< HEAD
+
+
+// #include"Member.h"
+
+// virtual void Member::createMember(string info) {
+//     return 
+// }
+
+
+// virtual string Member::getInfo() {
+//     return "";
+// }
+
+
+// virtual bool Member::checkDuplicated(string info) {
+//     return True;
+// }
+
+
+// bool Member::matchIDPW(string info) {
+//     return True;
+// }
+
+// void Member::deleteMember() {
+
+// }
+
+// vector<Recruit> Member::getRecruits() {
+//     return null;
+// }
+
+// void Member::analysis() {
+
+// }
+=======
 /**
  * Project 채용 정보 시스템
  */
@@ -60,3 +96,4 @@ vector<Recruit> Member::getRecruits() {
 virtual void Member::analysis(){
     
 }
+>>>>>>> 3ecfca7d9dd06100f637e2047a97470e3c10e5a0

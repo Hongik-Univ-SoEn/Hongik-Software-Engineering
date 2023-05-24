@@ -9,7 +9,7 @@
 class StatisticUI {
 public: 
     
-void startInterface();
+void startInterface(string print);
 };
 
 #endif //_STATISTICUI_H

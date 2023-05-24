@@ -15,6 +15,7 @@ class Recruit {
 public: 
     
     string getDetailInfo();
+<<<<<<< HEAD
     
 
     void addNumsOfApply();
@@ -31,6 +32,23 @@ public:
     string getDeadline();
     int getNumsOfApply();
    
+=======
+        
+    /**
+     * @param num
+     */
+    void setNumsOfApply(int num);
+        
+    /**
+     * @param info
+     */
+    void createRecruit(string info);
+        
+    List[string] getRecruitInfo();
+
+    string getWorkField();
+    int getNumOfApply();
+>>>>>>> 3ecfca7d9dd06100f637e2047a97470e3c10e5a0
 
 private: 
     string companyName;
@@ -39,7 +57,10 @@ private:
     string deadline;
     int numsOfApply;
     string businessNumber;
+<<<<<<< HEAD
     
+=======
+>>>>>>> 3ecfca7d9dd06100f637e2047a97470e3c10e5a0
 };
 
 #endif //_RECRUIT_H

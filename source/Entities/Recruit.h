@@ -6,29 +6,40 @@
 #ifndef _RECRUIT_H
 #define _RECRUIT_H
 
+
+#include <string>
+#include<vector>
+using namespace std;
+
 class Recruit {
 public: 
     
-String getDetailInfo();
+    string getDetailInfo();
     
-/**
- * @param num
- */
-void setNumsOfApply(Integer num);
+
+    void addNumsOfApply();
     
-/**
- * @param info
- */
-void createRecruit(String info);
+
+    void createRecruit(string info);
     
-List[String] getRecruitInfo();
+    vector<string> getRecruitInfo(); ///구현 ok
+
+    string getCompanyName(); ///구현 ok
+    string getBusinessNumber();
+    string getWorkField();
+    int getNumOfHire();
+    string getDeadline();
+    int getNumsOfApply();
+   
+
 private: 
-    String companyName;
-    String workField;
-    Integer numOfHire;
-    String deadline;
-    Integer numsOfApply;
-    String businessNumber;
+    string companyName;
+    string workField;
+    int numOfHire;
+    string deadline;
+    int numsOfApply;
+    string businessNumber;
+    
 };
 
 #endif //_RECRUIT_H

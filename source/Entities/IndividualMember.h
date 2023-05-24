@@ -7,34 +7,30 @@
 #define _INDIVIDUALMEMBER_H
 
 #include "Member.h"
+#include<string>
+#include<vector>
 
 
-class IndividualMember: public Member {
+class IndividualMember : public Member {
 public: 
     
-String getInfo();
+    // string getInfo();
     
-/**
- * @param info
- */
-IndividualMember createMember(String info);
+
+    // virtual IndividualMember createMember(string info);
+
+    // bool checkDuplicated(string info);
     
-/**
- * @param info
- */
-Boolean checkDuplicated(String info);
-    
-/**
- * @param apply
- */
-void addToApplyList(Recruit apply);
-    
-void getRecruit();
-    
-void cancelApply();
+
+    void addToApplyList(Recruit apply);
+
+    void getRecruit();
+
+    void cancelApply();
 private: 
-    String name;
-    String socialSecurityNumber;
+    string name;
+    string socialSecurityNumber;
+    vector<Recruit> recruitList;
 };
 
 #endif //_INDIVIDUALMEMBER_H

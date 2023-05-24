@@ -1,24 +1,30 @@
 #include <stdio.h>
 #include <string.h>
 
+#include<SearchRecruitByCompanyNameUI.h>
+#include<SearchRecruitByCompanyName.h>
+#include<ApplyUI.h>
+#include<Apply.h>
+#include<RecruitCollection.h>
 #define MAX_STRING 32
 #define INPUT_FILE_NAME "input.txt"
 #define OUTPUT_FILE_NAME "output.txt"
 
+
+
 void doTask();
 void program_exit();
 
-// »ç¿ë ÇÔ¼ö´Â ¿©±â¿¡ ¼±¾ð
+
 void join();	// example function
 
-// ÆÄÀÏ ÀÔÃâ·Â¿ë º¯¼ö ¼±¾ð
 FILE* in_fp, * out_fp;
 
 int main()
 {
-	// ÆÄÀÏ ÀÔÃâ·ÂÀ» À§ÇÑ ÃÊ±âÈ­
-	FILE* in_fp = fopen(INPUT_FILE_NAME, "r+");
-	FILE* out_fp = fopen(OUTPUT_FILE_NAME, "w+");
+	
+	FILE* in_fp = fopen("./input.txt", "r+");
+	FILE* out_fp = fopen("./output.txt", "w+");
 
 	doTask();
 
@@ -27,69 +33,75 @@ int main()
 
 void doTask()
 {
-	// level ¸Þ´º ÆÄ½ÌÀ» À§ÇÑ ±¸ºÐÀ» À§ÇÑ º¯¼ö
 	int menu_level_1 = 0, menu_level_2 = 0;
 	int is_program_exit = 0;
 
 	while (!is_program_exit) {
-		// 2 ÀÔ·ÂÆÄÀÏ¿¡¼­ ¸Þ´º ¼ýÀÚ °³¸¦ ÀÐ±â
 		fscanf(in_fp, "%d %d ", &menu_level_1, &menu_level_2);
 
-		// ¸Þ´º ±¸ºÐ ¹× ÇØ´ç ¿¬»ê ¼öÇà
+		
 		switch (menu_level_1) {
 		case 1:
 			switch (menu_level_2) {
 			case 1: 
-				// È¸¿ø °¡ÀÔ
+				// È¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 				join();	// example function
 				break;
 			case 2:
-				// È¸¿ø Å»Åð
+				// È¸ï¿½ï¿½ Å»ï¿½ï¿½
 				break;
 			}
 			break;
 		case 2:
 			switch (menu_level_2) {
 			case 1:
-				// ·Î±×ÀÎ
+				// ï¿½Î±ï¿½ï¿½ï¿½
 				break;
 			case 2:
-				// ·Î±×¾Æ¿ô
+				// ï¿½Î±×¾Æ¿ï¿½
 				break;
 			}
 		case 3:
 			switch (menu_level_2) {
 			case 1:
-				// Ã¤¿ë Á¤º¸ µî·Ï
+				// Ã¤ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 				break;
 			case 2:
-				// µî·ÏµÈ Ã¤¿ë Á¤º¸ Á¶È¸
+				// ï¿½ï¿½Ïµï¿½ Ã¤ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¸
 				break;
 			}
 		case 4:
 			switch (menu_level_2) {
 			case 1:
-				// Ã¤¿ë Á¤º¸ °Ë»ö
+					
+				    RecruitCollection* recruitCollection = new RecruitCollection(); ///ì–´ë””ì„ ê°€ ì´ë¯¸ ìƒì„±ë˜ì–´ ìžˆë‹¤ê³  ê°€ì •.
+    				SearchRecruitByCompanyName* searchRecruitByCompanyName =  new SearchRecruitByCompanyName() ; ///taskì—ì„œ ìƒì„±
+    				SearchRecruitByCompanyNameUI* searchRecruitByCompanyNameUI = new SearchRecruitByCompanyNameUI(); ////taskì—ì„œ ìƒì„±
+    				searchRecruitByCompanyName->setRecruitCollection(recruitCollection);
+    				searchRecruitByCompanyName->setSearchRecruitByCompanyNameUI(searchRecruitByCompanyNameUI);
+    				searchRecruitByCompanyNameUI->setSearchRecruitByCompanyName(searchRecruitByCompanyName); ///ì»¨íŠ¸ë¡¤ í´ëž˜ìŠ¤ì™€ ë°”ìš´ë”ë¦¬ í´ëž˜ìŠ¤ê°€ ì„œë¡œì— ëŒ€í•œ refë¥¼ ê°–ê³  ìžˆìŒ.
+    				searchRecruitByCompanyName->start(); /////// ë°”ìš´ë”ë¦¬ í´ë¼ìŠ¤ì˜ startInterfaceí•¨ìˆ˜ë¥¼ í˜¸ì¶œí•¨.
+    				searchRecruitByCompanyNameUI->searchRecruitByCompany("í™ìµëŒ€"); 
 				break;
 			case 2:
-				// Ã¤¿ë Áö¿ø
+				
 				break;
 			case 3:
-				// Áö¿ø Á¤º¸ Á¶È¸
+				// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¸
 				break;
 			case 4:
-				// Áö¿ø Ãë¼Ò
+				// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 				break;
 			}
 		case 5:
 			switch (menu_level_2) {
 			case 1:
-				// Áö¿ø Á¤º¸ Åë°è
+				// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 				break;
 			}
 		case 6:
 			switch (menu_level_2) {
-			case 1: // "6.1. ¡° Á¾·á ¸Þ´º ºÎºÐ
+			case 1: // "6.1. ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Þ´ï¿½ ï¿½Îºï¿½
 				program_exit();
 				is_program_exit = 1;
 				break;;
@@ -102,19 +114,19 @@ void doTask()
 // example function
 void join()
 {
-	/* !!!!!!! !!!!!!!!! Áß¿ä
-	* ´Ü¼øÈ÷ ÆÄÀÏÀ» ÅëÇØ ÀÔÃâ·ÂÇÏ´Â ¹æ¹ýÀ» º¸ÀÌ±â À§ÇÑ ÄÚµåÀÌ¹Ç·Î ÀÌ ÇÔ¼ö¿¡¼­ ±×´ë·Î »ç¿ëÇÏ¸é ¾ÈµÊ.
-	* control boundary class . ¹× ¸¦ ÀÌ¿ëÇØ¼­ ÇØ´ç ±â´ÉÀÌ ±¸ÇöµÇµµ·Ï ÇØ¾ß ÇÔ
+	/* !!!!!!! !!!!!!!!! ï¿½ß¿ï¿½
+	* ï¿½Ü¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Úµï¿½ï¿½Ì¹Ç·ï¿½ ï¿½ï¿½ ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×´ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½ ï¿½Èµï¿½.
+	* control boundary class . ï¿½ï¿½ ï¿½ï¿½ ï¿½Ì¿ï¿½ï¿½Ø¼ï¿½ ï¿½Ø´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Çµï¿½ï¿½ï¿½ ï¿½Ø¾ï¿½ ï¿½ï¿½
 	*/
 	char user_type[MAX_STRING], name[MAX_STRING], SSN[MAX_STRING],
 		address[MAX_STRING], ID[MAX_STRING], password[MAX_STRING];
-	// : , , ID, Password ÀÔ·Â Çü½Ä ÀÌ¸§ ÁÖ¹Î¹øÈ£ ¸¦ ÆÄÀÏ·ÎºÎÅÍ ÀÐÀ½
+	// : , , ID, Password ï¿½Ô·ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ ï¿½Ö¹Î¹ï¿½È£ ï¿½ï¿½ ï¿½ï¿½ï¿½Ï·Îºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	fscanf(in_fp, "%s %s %s %s", name, SSN, ID, password);
 
-	// ÇØ´ç ±â´É ¼öÇà
+	// ï¿½Ø´ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	//...
-	// Ãâ·Â Çü½Ä
-	fprintf(out_fp, "1.1. \n"); //È¸¿ø°¡ÀÔ
+	// ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	fprintf(out_fp, "1.1. \n"); //È¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	fprintf(out_fp, "%s %s %s %s\n", name, SSN, ID, password);
 }
 

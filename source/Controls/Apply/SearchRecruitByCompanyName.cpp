@@ -4,16 +4,19 @@
 
 
 #include "SearchRecruitByCompanyName.h"
+void SearchRecruitByCompanyName::setSearchRecruitByCompanyNameUI (SearchRecruitByCompanyNameUI* searchRecruitByCompanyNameUI )
+{this->searchRecruitByCompanyNameUI = searchRecruitByCompanyNameUI;}
+    
+void SearchRecruitByCompanyName::start(){
+    SearchRecruitByCompanyNameUI* temp = this->searchRecruitByCompanyNameUI;
+    temp->startInterface();}
 
-/**
- * SearchRecruitByCompanyName implementation
- */
+vector<string> SearchRecruitByCompanyName::getRecruitByCompanyName(string companyName) {
+    RecruitCollection* recruitCollection =  this->recruitCollection;
+    vector<string> info = recruitCollection->findRecruitByCompanyName(companyName);
+    return info;
+}
 
-
-/**
- * @param companyName
- * @return List[String]
- */
-List[String] SearchRecruitByCompanyName::getRecruitByCompanyName(String companyName) {
-    return null;
+void SearchRecruitByCompanyName::setRecruitCollection(RecruitCollection* x){
+    this->recruitCollection = x;
 }

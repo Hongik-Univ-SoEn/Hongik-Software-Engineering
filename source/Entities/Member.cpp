@@ -1,57 +1,34 @@
-/**
- * Project 채용 정보 시스템
- */
 
 
-#include "Member.h"
+// #include"Member.h"
 
-/**
- * Member implementation
- */
+// virtual void Member::createMember(string info) {
+//     return 
+// }
 
 
-/**
- * @param info
- * @return Member
- */
-virtual Member Member::createMember(String info) {
-    return null;
-}
+// virtual string Member::getInfo() {
+//     return "";
+// }
 
-/**
- * @return String
- */
-virtual String Member::getInfo() {
-    return "";
-}
 
-/**
- * @param info
- * @return Boolean
- */
-virtual Boolean Member::checkDuplicated(String info) {
-    return null;
-}
+// virtual bool Member::checkDuplicated(string info) {
+//     return True;
+// }
 
-/**
- * @param info
- * @return Boolean
- */
-Boolean Member::matchIDPW(String info) {
-    return null;
-}
 
-void Member::deleteMember() {
+// bool Member::matchIDPW(string info) {
+//     return True;
+// }
 
-}
+// void Member::deleteMember() {
 
-/**
- * @return List[Recruit]
- */
-List[Recruit] Member::getRecruits() {
-    return null;
-}
+// }
 
-void Member::analysis() {
+// vector<Recruit> Member::getRecruits() {
+//     return null;
+// }
 
-}
+// void Member::analysis() {
+
+// }

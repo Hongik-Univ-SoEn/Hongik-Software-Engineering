@@ -5,18 +5,20 @@
 
 #ifndef _RECRUITCOLLECTION_H
 #define _RECRUITCOLLECTION_H
-
+#include<Recruit.h>
+#include<vector>
+using namespace std;
 class RecruitCollection {
 public: 
+  
+    void addRecruit();
+
+    void setRecruit(Recruit recruit);
+
+    vector<string> findRecruitByCompanyName(string companyName);
+    Recruit findRecruitByBusinessNumber(string businessNumber);
     
-void addRecruit();
-    
-/**
- * @param info
- */
-Recruit findRecruit(String info);
-    
-void removeRecruit();
+    void removeRecruit();
 private: 
     vector<Recruit> recruit;
 };

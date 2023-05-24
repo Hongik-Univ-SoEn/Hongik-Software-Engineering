@@ -5,35 +5,32 @@
 
 #ifndef _MEMBER_H
 #define _MEMBER_H
+#include<string>
+#include<vector>
+#include<Recruit.h>
+using namespace std;
 
 class Member {
 public: 
     
-/**
- * @param info
- */
-virtual Member createMember(String info) = 0;
+
+// virtual Member createMember(string info) = 0;
     
-virtual String getInfo() = 0;
+// virtual string getInfo() = 0;
     
-/**
- * @param info
- */
-virtual Boolean checkDuplicated(String info) = 0;
+
+// virtual bool checkDuplicated(string info) = 0;
     
-/**
- * @param info
- */
-Boolean matchIDPW(String info);
+
+// bool matchIDPW(string info);
     
 void deleteMember();
-    
-List[Recruit] getRecruits();
+vector<Recruit> getRecruits();
     
 void analysis();
 private: 
-    String id;
-    String pw;
+    string id;
+    string pw;
     vector<Recruit> recruits;
 };
 

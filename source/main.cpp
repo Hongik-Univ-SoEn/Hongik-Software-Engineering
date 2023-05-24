@@ -8,15 +8,15 @@
 void doTask();
 void program_exit();
 
-// »ç¿ë ÇÔ¼ö´Â ¿©±â¿¡ ¼±¾ğ
+// ì‚¬ìš© í•¨ìˆ˜ëŠ” ì—¬ê¸°ì— ì„ ì–¸
 void join();	// example function
 
-// ÆÄÀÏ ÀÔÃâ·Â¿ë º¯¼ö ¼±¾ğ
+// íŒŒì¼ ì…ì¶œë ¥ìš© ë³€ìˆ˜ ì„ ì–¸
 FILE* in_fp, * out_fp;
 
 int main()
 {
-	// ÆÄÀÏ ÀÔÃâ·ÂÀ» À§ÇÑ ÃÊ±âÈ­
+	// íŒŒì¼ ì…ì¶œë ¥ì„ ìœ„í•œ ì´ˆê¸°í™”
 	FILE* in_fp = fopen(INPUT_FILE_NAME, "r+");
 	FILE* out_fp = fopen(OUTPUT_FILE_NAME, "w+");
 
@@ -27,69 +27,70 @@ int main()
 
 void doTask()
 {
-	// level ¸Ş´º ÆÄ½ÌÀ» À§ÇÑ ±¸ºĞÀ» À§ÇÑ º¯¼ö
+	// level ë©”ë‰´ íŒŒì‹±ì„ ìœ„í•œ êµ¬ë¶„ì„ ìœ„í•œ ë³€ìˆ˜
 	int menu_level_1 = 0, menu_level_2 = 0;
 	int is_program_exit = 0;
 
 	while (!is_program_exit) {
-		// 2 ÀÔ·ÂÆÄÀÏ¿¡¼­ ¸Ş´º ¼ıÀÚ °³¸¦ ÀĞ±â
+		// 2 ì…ë ¥íŒŒì¼ì—ì„œ ë©”ë‰´ ìˆ«ì ê°œë¥¼ ì½ê¸°
 		fscanf(in_fp, "%d %d ", &menu_level_1, &menu_level_2);
 
-		// ¸Ş´º ±¸ºĞ ¹× ÇØ´ç ¿¬»ê ¼öÇà
+		// ë©”ë‰´ êµ¬ë¶„ ë° í•´ë‹¹ ì—°ì‚° ìˆ˜í–‰
 		switch (menu_level_1) {
 		case 1:
 			switch (menu_level_2) {
 			case 1: 
-				// È¸¿ø °¡ÀÔ
+				// íšŒì› ê°€ì…
 				join();	// example function
 				break;
 			case 2:
-				// È¸¿ø Å»Åğ
+				// íšŒì› íƒˆí‡´
 				break;
 			}
 			break;
 		case 2:
 			switch (menu_level_2) {
 			case 1:
-				// ·Î±×ÀÎ
+				// ë¡œê·¸ì¸
 				break;
 			case 2:
-				// ·Î±×¾Æ¿ô
+				// ë¡œê·¸ì•„ì›ƒ
 				break;
 			}
 		case 3:
 			switch (menu_level_2) {
 			case 1:
-				// Ã¤¿ë Á¤º¸ µî·Ï
+				// ì±„ìš© ì •ë³´ ë“±ë¡
 				break;
 			case 2:
-				// µî·ÏµÈ Ã¤¿ë Á¤º¸ Á¶È¸
+				// ë“±ë¡ëœ ì±„ìš© ì •ë³´ ì¡°íšŒ
 				break;
 			}
 		case 4:
 			switch (menu_level_2) {
 			case 1:
-				// Ã¤¿ë Á¤º¸ °Ë»ö
+				// ì±„ìš© ì •ë³´ ê²€ìƒ‰
 				break;
 			case 2:
-				// Ã¤¿ë Áö¿ø
+				// ì±„ìš© ì§€ì›
 				break;
 			case 3:
-				// Áö¿ø Á¤º¸ Á¶È¸
+				// ì§€ì› ì •ë³´ ì¡°íšŒ
 				break;
 			case 4:
-				// Áö¿ø Ãë¼Ò
+				// ì§€ì› ì·¨ì†Œ
 				break;
 			}
 		case 5:
 			switch (menu_level_2) {
 			case 1:
-				// Áö¿ø Á¤º¸ Åë°è
+				// ì§€ì› ì •ë³´ í†µê³„
+                
 				break;
 			}
 		case 6:
 			switch (menu_level_2) {
-			case 1: // "6.1. ¡° Á¾·á ¸Ş´º ºÎºĞ
+			case 1: // "6.1. â€œ ì¢…ë£Œ ë©”ë‰´ ë¶€ë¶„
 				program_exit();
 				is_program_exit = 1;
 				break;;
@@ -102,19 +103,19 @@ void doTask()
 // example function
 void join()
 {
-	/* !!!!!!! !!!!!!!!! Áß¿ä
-	* ´Ü¼øÈ÷ ÆÄÀÏÀ» ÅëÇØ ÀÔÃâ·ÂÇÏ´Â ¹æ¹ıÀ» º¸ÀÌ±â À§ÇÑ ÄÚµåÀÌ¹Ç·Î ÀÌ ÇÔ¼ö¿¡¼­ ±×´ë·Î »ç¿ëÇÏ¸é ¾ÈµÊ.
-	* control boundary class . ¹× ¸¦ ÀÌ¿ëÇØ¼­ ÇØ´ç ±â´ÉÀÌ ±¸ÇöµÇµµ·Ï ÇØ¾ß ÇÔ
+	/* !!!!!!! !!!!!!!!! ì¤‘ìš”
+	* ë‹¨ìˆœíˆ íŒŒì¼ì„ í†µí•´ ì…ì¶œë ¥í•˜ëŠ” ë°©ë²•ì„ ë³´ì´ê¸° ìœ„í•œ ì½”ë“œì´ë¯€ë¡œ ì´ í•¨ìˆ˜ì—ì„œ ê·¸ëŒ€ë¡œ ì‚¬ìš©í•˜ë©´ ì•ˆë¨.
+	* control boundary class . ë° ë¥¼ ì´ìš©í•´ì„œ í•´ë‹¹ ê¸°ëŠ¥ì´ êµ¬í˜„ë˜ë„ë¡ í•´ì•¼ í•¨
 	*/
 	char user_type[MAX_STRING], name[MAX_STRING], SSN[MAX_STRING],
 		address[MAX_STRING], ID[MAX_STRING], password[MAX_STRING];
-	// : , , ID, Password ÀÔ·Â Çü½Ä ÀÌ¸§ ÁÖ¹Î¹øÈ£ ¸¦ ÆÄÀÏ·ÎºÎÅÍ ÀĞÀ½
+	// : , , ID, Password ì…ë ¥ í˜•ì‹ ì´ë¦„ ì£¼ë¯¼ë²ˆí˜¸ ë¥¼ íŒŒì¼ë¡œë¶€í„° ì½ìŒ
 	fscanf(in_fp, "%s %s %s %s", name, SSN, ID, password);
 
-	// ÇØ´ç ±â´É ¼öÇà
+	// í•´ë‹¹ ê¸°ëŠ¥ ìˆ˜í–‰
 	//...
-	// Ãâ·Â Çü½Ä
-	fprintf(out_fp, "1.1. \n"); //È¸¿ø°¡ÀÔ
+	// ì¶œë ¥ í˜•ì‹
+	fprintf(out_fp, "1.1. \n"); //íšŒì›ê°€ì…
 	fprintf(out_fp, "%s %s %s %s\n", name, SSN, ID, password);
 }
 

@@ -4,12 +4,19 @@
 
 
 #include "StatisticUI.h"
+#include <iostream>
+using namespace std;
 
 /**
  * StatisticUI implementation
  */
 
-
-void StatisticUI::startInterface() {
-
+/*
+	함수 이름 : StatisticUI::startInterface(string print)
+	기능	 : 출력 기능 제공
+	전달 인자 : string print
+	반환값    : 없음
+*/
+void StatisticUI::startInterface(string print) {
+    cout << print << endl;
 }

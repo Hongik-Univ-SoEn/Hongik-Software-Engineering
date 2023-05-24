@@ -12,25 +12,27 @@
 class CompanyMember: public Member {
 public: 
     
-String getInfo();
-    
-/**
- * @param info
- */
-CompanyMember createMember(String info);
-    
-/**
- * @param info
- */
-Boolean checkDuplicated(String info);
-    
-/**
- * @param addRecruit
- */
-void addToRecruitList(Recruit addRecruit);
+    string getInfo();
+        
+    /**
+     * @param info
+     */
+    CompanyMember createMember(string info);
+        
+    /**
+     * @param info
+     */
+    Boolean checkDuplicated(string info);
+        
+    /**
+     * @param addRecruit
+     */
+    void addToRecruitList(Recruit addRecruit);
+
+    virtual string analysis();
 private: 
-    String companyName;
-    String businessNumber;
+    string companyName;
+    string businessNumber;
 };
 
 #endif //_COMPANYMEMBER_H

@@ -7,6 +7,7 @@
 #include "Controls/MemberManagement/Withdrawal.h"
 #include "Controls/MemberManagement/SignIn.h"
 #include "Controls/MemberManagement/Signout.h"
+#include "Controls/RecruitmentInfo/Statistic.h"
 
 #include "Boundaries/MemberManagement/MemberSignUpUI.h"
 #include "Boundaries/MemberManagement/CompanyMemberSignUpUI.h"
@@ -14,6 +15,7 @@
 #include "Boundaries//MemberManagement/WithdrawalUI.h"
 #include "Boundaries/MemberManagement/SignInUI.h"
 #include "Boundaries/MemberManagement/SignoutUI.h"
+#include "Boundaries/RecruitmentInfo/StatisticUI.h"
 
 #define INPUT_FILE_NAME "input.txt"
 #define OUTPUT_FILE_NAME "output.txt"
@@ -44,6 +46,9 @@ SignInUI signInUI;
 SignOut signOut;
 SignOutUI signOutUI;
 
+Statistic statistic;
+StatisticUI statisticUI;
+
 int main()
 {
 	// 파일 입출력을 위한 초기화
@@ -65,6 +70,9 @@ int main()
 
 	signOutUI.setControl(&signOut);
 	signOutUI.setFilePointer(in_fp, out_fp);
+
+	statisticUI.setControl(&statistic);
+	statisticUI.setFilePointer(in_fp, out_fp);
 
 	doTask();
 
@@ -134,7 +142,7 @@ void doTask()
 			switch (menu_level_2) {
 			case 1:
 				// 지원 정보 통계
-                
+				statisticUI.startInterface();
 				break;
 			}
 		case 6:

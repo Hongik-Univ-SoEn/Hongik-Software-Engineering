@@ -35,6 +35,8 @@ public:
 
 	bool matchIDPW(string id, string pw);
 
+	virtual string analysis();
+
 protected:
 	string id;
 	string pw;

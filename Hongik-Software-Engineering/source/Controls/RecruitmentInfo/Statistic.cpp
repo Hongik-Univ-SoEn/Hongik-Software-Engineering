@@ -4,6 +4,7 @@
 
 
 #include "Statistic.h"
+#include "../../Entities/Member.h"
 #include <iostream>
 using namespace std;
 
@@ -15,20 +16,8 @@ using namespace std;
 	함수 이름 : Statistic::analysis()
 	기능	   : 지원 정보 통계 기능 제공
 	전달 인자 : 없음
-	반환값    : 없음
+	반환값    : string
 */
-void Statistic::analysis() {
-    string forReturn = member->analysis();
-    StatisticUI statisticUI;
-    statisticUI.startInterface(forReturn);
+string Statistic::analysis() {
+	return Member::getInstance()->analysis();
 }
-
-/*
-  함수 이름 : Statistic::Statistic(Member *member)
-  기능	   : 생성자
-  전달 인자 : Member *member
-  반환값    : 없음
-*/
-Statistic::Statistic(Member *member) {
-    this->member = member;
-} 

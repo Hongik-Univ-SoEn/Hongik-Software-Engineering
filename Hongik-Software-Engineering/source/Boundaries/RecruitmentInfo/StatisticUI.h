@@ -5,11 +5,19 @@
 
 #ifndef _STATISTICUI_H
 #define _STATISTICUI_H
+#include "../../../UIClass.h"
+#include "../../Controls/RecruitmentInfo/Statistic.h"
+using namespace std;
 
-class StatisticUI {
+class StatisticUI : public UIClass{
 public: 
     
-void startInterface(string print);
+    void startInterface();
+
+    void setControl(Statistic* control);
+
+private:
+    Statistic* control;
 };
 
 #endif //_STATISTICUI_H

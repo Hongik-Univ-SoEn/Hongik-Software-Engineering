@@ -3,7 +3,7 @@
  */
 
 
-#include "ApplyInfoUI.h"
+#include "../../Controls/RecruitmentInfo/ApplyInfo.h"
 #include <iostream>
 using namespace std;
 

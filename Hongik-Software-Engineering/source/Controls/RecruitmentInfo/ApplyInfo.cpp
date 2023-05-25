@@ -4,8 +4,8 @@
 
 
 #include "ApplyInfo.h"
-#include "ApplyInfoUI.h"
-#include "IndividualMember.h"
+#include "../../Boundaries/RecruitmentInfo/ApplyInfoUI.h"
+#include "../../Entities/IndividualMember.h"
 #include <iostream>
 using namespace std;
 

@@ -5,7 +5,7 @@
 
 #ifndef _APPLYINFOUI_H
 #define _APPLYINFOUI_H
-#include "ApplyInfo.h"
+#include "../../Controls/RecruitmentInfo/ApplyInfo.h"
 
 class ApplyInfoUI {
 private:

@@ -69,3 +69,7 @@ vector<Recruit*> Member::getRecruits() {
 string Member::getId() {
 	return this->id;
 }
+
+string Member::analysis() {
+	return "";
+}

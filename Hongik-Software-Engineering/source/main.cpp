@@ -83,7 +83,7 @@ int main()
 	in_fp = fopen(INPUT_FILE_NAME, "r+");
 	out_fp = fopen(OUTPUT_FILE_NAME, "w+");
 
-	// setup
+	// setup Control class 설정, file pointer 설정.
 	companySignUpUI.setControl(&companySignUp);
 	companySignUpUI.setFilePointer(in_fp, out_fp);
 

@@ -14,7 +14,6 @@ class CheckRegisteredRecruitUI : public UIClass {
 public:
     
     void startInterface();
-    void checkRecruit(string businessNumber);
     void setControl(CheckRegisteredRecruit* control);
 
 private:

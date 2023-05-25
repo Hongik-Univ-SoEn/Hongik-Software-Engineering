@@ -7,28 +7,37 @@
 #include "Controls/MemberManagement/Withdrawal.h"
 #include "Controls/MemberManagement/SignIn.h"
 #include "Controls/MemberManagement/Signout.h"
-#include "Controls/RecruitmentInfo/Statistic.h"
+
 #include "Controls/Apply/SearchRecruitByCompanyName.h"
 #include "Controls/Apply/Apply.h"
+
 #include "Controls/Hire/AddRecruit.h"
+#include "Controls/Hire/CheckRegisteredRecruit.h"
+
+#include "Controls/RecruitmentInfo/Statistic.h"
 #include "Controls/RecruitmentInfo/ApplyInfo.h"
 #include "Controls/RecruitmentInfo/ApplyCancel.h"
 
 #include "Boundaries/MemberManagement/MemberSignUpUI.h"
 #include "Boundaries/MemberManagement/CompanyMemberSignUpUI.h"
 #include "Boundaries/MemberManagement/IndividualMemberSignUpUI.h"
-#include "Boundaries//MemberManagement/WithdrawalUI.h"
+#include "Boundaries/MemberManagement/WithdrawalUI.h"
 #include "Boundaries/MemberManagement/SignInUI.h"
 #include "Boundaries/MemberManagement/SignoutUI.h"
-#include "Boundaries/RecruitmentInfo/StatisticUI.h"
+
+
 #include "Boundaries/Apply/SearchRecruitByCompanyNameUI.h"
 #include "Boundaries/Apply/ApplyUI.h"
+
 #include "Boundaries/Hire/AddRecruitUI.h"
+#include "Boundaries/Hire/CheckRegisteredRecruitUI.h"
+
+#include "Boundaries/RecruitmentInfo/StatisticUI.h"
+#include "Boundaries/RecruitmentInfo/ApplyInfoUI.h"
+#include "Boundaries/RecruitmentInfo/ApplyCancelUI.h"
 
 
 #include "Entities/RecruitCollection.h"
-#include "Boundaries/RecruitmentInfo/ApplyInfoUI.h"
-#include "Boundaries/RecruitmentInfo/ApplyCancelUI.h"
 
 #define INPUT_FILE_NAME "input.txt"
 #define OUTPUT_FILE_NAME "output.txt"
@@ -77,6 +86,9 @@ ApplyInfoUI applyInfoUI;
 ApplyCancel applyCancel;
 ApplyCancelUI applyCancelUI;
 
+CheckRegisteredRecruit checkRegisteredRecruit;
+CheckRegisteredRecruitUI checkRegisteredRecruitUI;
+
 int main()
 {
 	// 파일 입출력을 위한 초기화
@@ -116,6 +128,9 @@ int main()
 
 	applyCancelUI.setControl(&applyCancel);
 	applyCancelUI.setFilePointer(in_fp, out_fp);
+
+	checkRegisteredRecruitUI.setControl(&checkRegisteredRecruit);
+	checkRegisteredRecruitUI.setFilePointer(in_fp, out_fp);
 
 	doTask();
 
@@ -166,6 +181,7 @@ void doTask()
 				break;
 			case 2:
 				// 등록된 채용 정보 조회
+				checkRegisteredRecruitUI.startInterface();
 				break;
 			}
 			break;

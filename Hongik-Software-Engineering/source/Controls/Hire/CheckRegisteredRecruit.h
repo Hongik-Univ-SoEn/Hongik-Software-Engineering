@@ -6,13 +6,18 @@
 #ifndef _CHECKREGISTEREDRECRUIT_H
 #define _CHECKREGISTEREDRECRUIT_H
 
+#include <string>
+#include <vector>
+
+using namespace std;
+
 class CheckRegisteredRecruit {
-public: 
-    
-/**
- * @param businessNumber
- */
-List showRecruit(string businessNumber);
+public:
+
+	/**
+	 * @param businessNumber
+	 */
+	vector<string> showRecruit();
 };
 
 #endif //_CHECKREGISTEREDRECRUIT_H

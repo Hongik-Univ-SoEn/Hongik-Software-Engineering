@@ -1,8 +1,3 @@
-/**
- * Project 채용 정보 시스템
- */
-
-
 #include "CheckRegisteredRecruitUI.h"
 #include "./../../Entities/CompanyMember.h"
 #include "./../../Entities/RecruitCollection.h"
@@ -21,16 +16,12 @@ void CheckRegisteredRecruitUI::startInterface() {
    char companyName[MAX_STRING], workField[MAX_STRING], deadline[MAX_STRING], businessNumber[MAX_STRING];
    char numOfHire[MAX_STRING];
 
-   
-   auto companyMember = (CompanyMember*)Member::getInstance();
-   auto info = companyMember->getInfo();
-   Recruit* recruit = companyMember->getRecruits()[0];
-   auto recruitinfo = recruit->getRecruitInfo();
+   auto recruitInfo = control->showRecruit();
 
    //회사이름, 사업자번호, 업무, 인원 수, 마감일 출력파일에 출력
    fprintf(out_fp, "3.2. 등록된 채용 정보 조회\n>");
-   fprintf(out_fp, " %s %d %s", recruitinfo[2].c_str(), recruitinfo[3].c_str(), recruitinfo[4].c_str());
-   fprintf(out_fp, "\n");
+   fprintf(out_fp, " %s %s %s", recruitInfo[0].c_str(), recruitInfo[1].c_str(), recruitInfo[2].c_str());
+   fprintf(out_fp, "\n\n");
 
 }
 

@@ -26,7 +26,12 @@ void StatisticUI::startInterface() {
 
     fprintf(out_fp, "\n");
 }
-
+/*
+	함수 이름 : StatisticUI::setControl(Statistic* control)
+	기능	 : control setter function
+	전달 인자 : 없음
+	반환값    : 없음
+*/
 void StatisticUI::setControl(Statistic* control) {
 	this->control = control;
 	

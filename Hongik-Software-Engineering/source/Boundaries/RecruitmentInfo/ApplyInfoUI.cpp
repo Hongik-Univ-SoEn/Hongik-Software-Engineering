@@ -29,7 +29,7 @@ void ApplyInfoUI::startInterface() {
 
 /*
   함수 이름 : ApplyInfoUI::setControl(ApplyInfo* control)
-  기능	   : 지원 취소 기능 제공
+  기능	    : control setter function
   전달 인자 : ApplyInfo* control 
   반환값    : 없음
 */

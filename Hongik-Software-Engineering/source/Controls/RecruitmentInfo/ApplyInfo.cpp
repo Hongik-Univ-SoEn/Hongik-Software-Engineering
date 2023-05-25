@@ -19,7 +19,7 @@ using namespace std;
   함수 이름 : ApplyInfo::applyInfo()
   기능	   : 출력을 위한 문자열 생성
   전달 인자 : 없음
-  반환값    : string // 회사이름, 사업자번호, 업무, 
+  반환값    : string // 회사이름, 사업자번호, 업무, 인원수, 신청 마감일
 */
 string ApplyInfo::applyInfo(){
     string result = "";

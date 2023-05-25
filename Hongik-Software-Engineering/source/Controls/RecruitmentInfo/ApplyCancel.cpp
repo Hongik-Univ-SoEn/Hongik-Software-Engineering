@@ -9,10 +9,10 @@
  */
 
  /*
-     함수 이름 : ApplyCancel::cancelApply()
+     함수 이름 : string ApplyCancel::cancelApply(string businessNumber)
      기능	   : 지원 취소 기능 제공
-     전달 인자 : string businessNumber
-     반환값    : string
+     전달 인자 : string businessNumber // 사업자 번호
+     반환값    : string //[회사이름] [사업자번호] [업무]
  */
 string ApplyCancel::cancelApply(string businessNumber) {
     Member* member = Member::getInstance();

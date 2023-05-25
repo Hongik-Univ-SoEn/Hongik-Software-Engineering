@@ -4,7 +4,9 @@
 
 
 #include "AddRecruit.h"
+#include "./../../Entities/Recruit.h"
 
+using namespace std;
 /**
  * AddRecruit implementation
  */
@@ -14,6 +16,12 @@
  * @param workField
  * @return List
  */
-List AddRecruit::addRecruit(string workField) {
-    return null;
+
+Recruit* AddRecruit::addRecruit(vector<string> info) {
+   
+    Recruit* recruit = Recruit::createRecruit(info);
+
+ 
+
+    return recruit;
 }

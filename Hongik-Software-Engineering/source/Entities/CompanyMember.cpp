@@ -80,3 +80,7 @@ string CompanyMember::analysis() {
     return result;
 
 }
+
+void CompanyMember::addToRecruitList(Recruit* recruit) {
+    recruits.push_back(recruit);
+}

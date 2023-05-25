@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\Boundaries">
+      <UniqueIdentifier>{de23068c-fb06-43de-830a-cc7f416c905e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Controls">
+      <UniqueIdentifier>{2a5665ff-edf0-4120-8936-3ac799770e3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Entities">
+      <UniqueIdentifier>{5c03a8f0-858a-4c4e-85ee-c944a0d123d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Entities">
+      <UniqueIdentifier>{cc21eb95-3c46-44ea-8129-03066062f822}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Controls\Apply">
+      <UniqueIdentifier>{8e1d7b03-dc09-4ed9-9b38-7a0d6cb9681f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Controls\Hire">
+      <UniqueIdentifier>{1ce4b457-ecc0-4d3b-b429-2343a882e4fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Controls\MemberManagement">
+      <UniqueIdentifier>{334e171f-e5b5-46cf-8446-2113a8e0198b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Controls\RecruitmentInfo">
+      <UniqueIdentifier>{8fe73dd1-d9a9-44e7-bf6d-66b968e02e8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Controls">
+      <UniqueIdentifier>{15c39b03-ea55-45da-a422-908e45594b21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Boundaries">
+      <UniqueIdentifier>{69ff279a-af89-4c39-8992-81e725963d69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Controls\Apply">
+      <UniqueIdentifier>{8e0edca3-acfe-4da0-96db-297263172911}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Controls\Hire">
+      <UniqueIdentifier>{b1a4ecf7-e2a5-47bd-9260-e3f0aaf25a1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Controls\MemberManagement">
+      <UniqueIdentifier>{4f07e526-e47f-4355-a6a0-96026a103c54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Controls\RecruitmentInfo">
+      <UniqueIdentifier>{d1e53a5f-d32b-4cc1-ae70-2d847bf4a372}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Boundaries\Apply">
+      <UniqueIdentifier>{64202e70-8ca6-432c-a7e4-38b57d687602}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Boundaries\Hire">
+      <UniqueIdentifier>{6c2b88c4-603a-49b1-bd9a-6070d316b3ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Boundaries\MemberManagement">
+      <UniqueIdentifier>{e59b5ac0-8ddd-4f2a-9220-006c15b594f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Boundaries\RecruitmentInfo">
+      <UniqueIdentifier>{ac8f9f76-bcc8-48b5-a2a4-cb0f8a55ad71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Boundaries\Apply">
+      <UniqueIdentifier>{59b91c7e-47ec-4543-9738-94d6e89a5ad3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Boundaries\Hire">
+      <UniqueIdentifier>{56cb2c09-0a06-4642-80d4-c4ad5a8f2aa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Boundaries\MeberManagement">
+      <UniqueIdentifier>{5c28238b-fefa-4366-b441-7fd7be2a2f2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Boundaries\RecruitmentInfo">
+      <UniqueIdentifier>{023c8b11-ccb1-4bf4-b3e5-8f9df8c48791}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Entities\RecruitCollection.cpp">
+      <Filter>소스 파일\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Entities\Recruit.cpp">
+      <Filter>소스 파일\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Entities\MemberCollection.cpp">
+      <Filter>소스 파일\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Entities\Member.cpp">
+      <Filter>소스 파일\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Entities\IndividualMember.cpp">
+      <Filter>소스 파일\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Entities\CompanyMember.cpp">
+      <Filter>소스 파일\Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Controls\Apply\Apply.cpp">
+      <Filter>소스 파일\Controls\Apply</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Controls\Apply\SearchRecruitByCompanyName.cpp">
+      <Filter>소스 파일\Controls\Apply</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Controls\Hire\CheckRegisteredRecruit.cpp">
+      <Filter>소스 파일\Controls\Hire</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Controls\Hire\AddRecruit.cpp">
+      <Filter>소스 파일\Controls\Hire</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Controls\MemberManagement\Withdrawal.cpp">
+      <Filter>소스 파일\Controls\MemberManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Controls\MemberManagement\CompanyMemberSignUp.cpp">
+      <Filter>소스 파일\Controls\MemberManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Controls\MemberManagement\IndividualMemberSignUp.cpp">
+      <Filter>소스 파일\Controls\MemberManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Controls\MemberManagement\MemberSignUp.cpp">
+      <Filter>소스 파일\Controls\MemberManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Controls\MemberManagement\SignIn.cpp">
+      <Filter>소스 파일\Controls\MemberManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Controls\MemberManagement\SignOut.cpp">
+      <Filter>소스 파일\Controls\MemberManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Controls\RecruitmentInfo\Statistic.cpp">
+      <Filter>소스 파일\Controls\RecruitmentInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Controls\RecruitmentInfo\ApplyInfo.cpp">
+      <Filter>소스 파일\Controls\RecruitmentInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Boundaries\Apply\ApplyUI.cpp">
+      <Filter>소스 파일\Boundaries\Apply</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Boundaries\Apply\SearchRecruitByCompanyNameUI.cpp">
+      <Filter>소스 파일\Boundaries\Apply</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Boundaries\Hire\CheckRegisteredRecruitUI.cpp">
+      <Filter>소스 파일\Boundaries\Hire</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Boundaries\Hire\AddRecruitUI.cpp">
+      <Filter>소스 파일\Boundaries\Hire</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Boundaries\MemberManagement\WithdrawalUI.cpp">
+      <Filter>소스 파일\Boundaries\MemberManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Boundaries\MemberManagement\CompanyMemberSignUpUI.cpp">
+      <Filter>소스 파일\Boundaries\MemberManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Boundaries\MemberManagement\IndividualMemberSignUpUI.cpp">
+      <Filter>소스 파일\Boundaries\MemberManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Boundaries\MemberManagement\MemberSignUpUI.cpp">
+      <Filter>소스 파일\Boundaries\MemberManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Boundaries\MemberManagement\SignInUI.cpp">
+      <Filter>소스 파일\Boundaries\MemberManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Boundaries\MemberManagement\SignOutUI.cpp">
+      <Filter>소스 파일\Boundaries\MemberManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Boundaries\RecruitmentInfo\StatisticUI.cpp">
+      <Filter>소스 파일\Boundaries\RecruitmentInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Boundaries\RecruitmentInfo\ApplyInfoUI.cpp">
+      <Filter>소스 파일\Boundaries\RecruitmentInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="UIClass.cpp">
+      <Filter>소스 파일\Boundaries</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\Entities\RecruitCollection.h">
+      <Filter>헤더 파일\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Entities\CompanyMember.h">
+      <Filter>헤더 파일\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Entities\IndividualMember.h">
+      <Filter>헤더 파일\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Entities\Member.h">
+      <Filter>헤더 파일\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Entities\MemberCollection.h">
+      <Filter>헤더 파일\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Entities\Recruit.h">
+      <Filter>헤더 파일\Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Controls\Apply\SearchRecruitByCompanyName.h">
+      <Filter>헤더 파일\Controls\Apply</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Controls\Apply\Apply.h">
+      <Filter>헤더 파일\Controls\Apply</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Controls\Hire\CheckRegisteredRecruit.h">
+      <Filter>헤더 파일\Controls\Hire</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Controls\Hire\AddRecruit.h">
+      <Filter>헤더 파일\Controls\Hire</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Controls\MemberManagement\CompanyMemberSignUp.h">
+      <Filter>헤더 파일\Controls\MemberManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Controls\MemberManagement\IndividualMemberSignUp.h">
+      <Filter>헤더 파일\Controls\MemberManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Controls\MemberManagement\MemberSignUp.h">
+      <Filter>헤더 파일\Controls\MemberManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Controls\MemberManagement\SignIn.h">
+      <Filter>헤더 파일\Controls\MemberManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Controls\MemberManagement\SignOut.h">
+      <Filter>헤더 파일\Controls\MemberManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Controls\MemberManagement\Withdrawal.h">
+      <Filter>헤더 파일\Controls\MemberManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Controls\RecruitmentInfo\Statistic.h">
+      <Filter>헤더 파일\Controls\RecruitmentInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Controls\RecruitmentInfo\ApplyInfo.h">
+      <Filter>헤더 파일\Controls\RecruitmentInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Boundaries\Apply\ApplyUI.h">
+      <Filter>헤더 파일\Boundaries\Apply</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Boundaries\Apply\SearchRecruitByCompanyNameUI.h">
+      <Filter>헤더 파일\Boundaries\Apply</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Boundaries\Hire\CheckRegisteredRecruitUI.h">
+      <Filter>헤더 파일\Boundaries\Hire</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Boundaries\Hire\AddRecruitUI.h">
+      <Filter>헤더 파일\Boundaries\Hire</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Boundaries\MemberManagement\WithdrawalUI.h">
+      <Filter>헤더 파일\Boundaries\MeberManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Boundaries\MemberManagement\CompanyMemberSignUpUI.h">
+      <Filter>헤더 파일\Boundaries\MeberManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Boundaries\MemberManagement\IndividualMemberSignUpUI.h">
+      <Filter>헤더 파일\Boundaries\MeberManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Boundaries\MemberManagement\MemberSignUpUI.h">
+      <Filter>헤더 파일\Boundaries\MeberManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Boundaries\MemberManagement\SignInUI.h">
+      <Filter>헤더 파일\Boundaries\MeberManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Boundaries\MemberManagement\SignOutUI.h">
+      <Filter>헤더 파일\Boundaries\MeberManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Boundaries\RecruitmentInfo\StatisticUI.h">
+      <Filter>헤더 파일\Boundaries\RecruitmentInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Boundaries\RecruitmentInfo\ApplyInfoUI.h">
+      <Filter>헤더 파일\Boundaries\RecruitmentInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="UIClass.h">
+      <Filter>헤더 파일\Boundaries</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -10,7 +10,9 @@
 
 class RecruitCollection {
 public: 
-  
+
+    static RecruitCollection * getInstance();
+
     void addRecruit(Recruit* recruit);
 
     vector<string> findRecruitByCompanyName(string companyName);
@@ -20,6 +22,7 @@ public:
     bool removeRecruit(string businessNumber);
 private: 
     vector<Recruit*> recruit;
+    static RecruitCollection* recruitCollectionInstance;
 };
 
 #endif //_RECRUITCOLLECTION_H

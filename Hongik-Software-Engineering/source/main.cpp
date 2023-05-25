@@ -8,6 +8,8 @@
 #include "Controls/MemberManagement/SignIn.h"
 #include "Controls/MemberManagement/Signout.h"
 #include "Controls/RecruitmentInfo/Statistic.h"
+#include "Controls/Apply/SearchRecruitByCompanyName.h"
+#include "Controls/Apply/Apply.h"
 
 #include "Boundaries/MemberManagement/MemberSignUpUI.h"
 #include "Boundaries/MemberManagement/CompanyMemberSignUpUI.h"
@@ -16,6 +18,11 @@
 #include "Boundaries/MemberManagement/SignInUI.h"
 #include "Boundaries/MemberManagement/SignoutUI.h"
 #include "Boundaries/RecruitmentInfo/StatisticUI.h"
+#include "Boundaries/Apply/SearchRecruitByCompanyNameUI.h"
+#include "Boundaries/Apply/ApplyUI.h"
+
+
+#include "Entities/RecruitCollection.h"
 
 #define INPUT_FILE_NAME "input.txt"
 #define OUTPUT_FILE_NAME "output.txt"
@@ -49,6 +56,13 @@ SignOutUI signOutUI;
 Statistic statistic;
 StatisticUI statisticUI;
 
+SearchRecruitByCompanyNameUI searchRecruitByCompanyNameUI;
+SearchRecruitByCompanyName searchRecruitByCompanyName;
+
+ApplyUI applyUI;
+Apply applyControl;
+
+
 int main()
 {
 	// 파일 입출력을 위한 초기화
@@ -73,6 +87,12 @@ int main()
 
 	statisticUI.setControl(&statistic);
 	statisticUI.setFilePointer(in_fp, out_fp);
+
+	searchRecruitByCompanyNameUI.setControl(&searchRecruitByCompanyName);
+	searchRecruitByCompanyNameUI.setFilePointer(in_fp, out_fp);
+
+	applyUI.setControl(&applyControl);
+ 	applyUI.setFilePointer(in_fp, out_fp);
 
 	doTask();
 
@@ -126,10 +146,10 @@ void doTask()
 		case 4:
 			switch (menu_level_2) {
 			case 1:
-				// 채용 정보 검색
+				searchRecruitByCompanyNameUI.startInterface();
 				break;
 			case 2:
-				// 채용 지원
+				applyUI.startInterface();
 				break;
 			case 3:
 				// 지원 정보 조회

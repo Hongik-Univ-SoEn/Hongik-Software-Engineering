@@ -1,27 +1,27 @@
-/**
- * Project 채용 정보 시스템
- */
 
 #ifndef _APPLYUI_H
 #define _APPLYUI_H
 #include "../../Entities/IndividualMember.h"
 #include "../../Controls/Apply/Apply.h"
+#include"../../UIClass.h"
 
-class ApplyUI {
+///// 해당 클래스는 채용 즉시 지원 usecase에 사용되는 boundary class
+/// control class인 Apply 클래스 객체를 참조함. 
+/// 파일 입출력을 위해서 파일 포인터를 담고 있는 UIClass class를 상속받음.
+
+class ApplyUI :public UIClass{
 public:
 
-	void applyToRecruit(string businessNumber, IndividualMember* individualMember);
+	
 
-	void startInterface();
+	string startInterface();
 
-	void setApply(Apply* applyControl);
-	void setOutFile(FILE* out);
-	void setInFile(FILE* in);
+	void setControl(Apply* applyControl);
+
 
 private:
 	Apply* applyControl;
-	FILE* in;
-	FILE* out;
+
 };
 
 #endif //_APPLYUI_H

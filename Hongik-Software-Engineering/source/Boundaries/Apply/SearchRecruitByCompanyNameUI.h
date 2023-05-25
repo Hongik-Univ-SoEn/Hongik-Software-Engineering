@@ -4,17 +4,20 @@
 #define _SEARCHRECRUITBYCOMPANYNAMEUI_H
 
 #include<string>
-#include<SearchRecruitByCompanyName.h>
 #include<vector>
+#include"../../Controls/Apply/SearchRecruitByCompanyName.h">
+#include"../../UIClass.h"
 using namespace std;
 
-class SearchRecruitByCompanyNameUI {
+///// 해당 클래스는 회사 이름으로 검색했을 때의 채용 정보 리스트를 반환하기 위해 사용되는 boundary class
+////control 클래스인 SearchRecruitByCompanyName의 객체를 참조함.
+/// 파일 입출력을 위해서 파일 포인터를 담고 있는 UIClass class를 상속받음.
+class SearchRecruitByCompanyNameUI : public UIClass{
 public: 
     
-
-    void searchRecruitByCompany(string companyName);
-    void setSearchRecruitByCompanyName(SearchRecruitByCompanyName* x);
+    void setControl(SearchRecruitByCompanyName* x);
     void startInterface();
+
 private:
     SearchRecruitByCompanyName* searchRecruitByCompanyName;
 
@@ -22,12 +25,4 @@ private:
 
 #endif 
 
-
-////SearchRecruitByCompanyName을 갖고 있어야 함.
-///SearchRecruitByCompanyName은 RecruitCollection을 갖고 있어야 함.
-///RecruitCollection은 Recruit을 갖고 있어야 함.
-
-//이 기능이 불릴 때, 가장 먼저 SearchRecruitCompanyName(컨트롤)객체를 생성하고, 이미 생성되어 있는 RecruitCollection을 SearchRecruitCompanyName(컨트롤)객체에 setting.
-// SearchRecruitCompanyNameUI(바운더리)객체를 생성하고, 미리 생성된 SearchRecruitCompanyName(컨트롤) 객체를 setting.
-// 그리고나서 SearchRecruitByCompanyName의 searchRecruitByComapny를 호출
 

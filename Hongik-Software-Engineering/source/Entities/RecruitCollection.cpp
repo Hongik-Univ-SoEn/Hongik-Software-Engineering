@@ -4,6 +4,14 @@
 
 #include "RecruitCollection.h"
 
+RecruitCollection* RecruitCollection::getInstance() {
+	if (recruitCollectionInstance == nullptr) {
+		recruitCollectionInstance = new RecruitCollection();
+	}
+	return recruitCollectionInstance ;
+}
+
+
 void RecruitCollection::addRecruit(Recruit* recruit) {
     this->recruit.push_back(recruit);
 }
@@ -41,3 +49,4 @@ bool RecruitCollection::removeRecruit(string businessNumber) {
     }
     return false;
 }
+

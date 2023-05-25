@@ -1,33 +1,21 @@
+
 #include "ApplyUI.h"
 
-#define MAX_STRING 32
 
-void ApplyUI::applyToRecruit(string businessNumber,IndividualMember* individualMember) {
-    vector <string> result = this->applyControl->addApply(businessNumber,individualMember);
+string ApplyUI::startInterface() {
     
-    fprintf(out, "4.2. ä�� ����\n>");
-    for (auto str : result) {
-        fprintf(out, " %s", str);
-    }
-    fprintf(out, "\n\n");
-}
-
-void ApplyUI::startInterface() {
     char businessNumber[MAX_STRING];
-    fscanf(in, "%s", businessNumber);
+    fprintf(out_fp, "4.2. 지원하기\n>");
+    fscanf(in_fp, "%s", businessNumber);    ///// 파일로부터 사업자 번호를 읽어와서 반환함.
 
-    // this is a act of an actor
-    applyToRecruit(string(businessNumber), (IndividualMember*)IndividualMember::getInstance());
+    vector <string> result = this->applyControl->addApply(businessNumber,(IndividualMember* )(Member::getInstance())); //// control 클래스 객체의 addApply 함수를 호출.
+    for (auto str : result) { //// control 객체의 함수를 호출해서 반환받은 결과 값을 파일에 출력.
+        fprintf(out_fp, " %s", str);
+    }
+    fprintf(out_fp, "\n\n");
 }
 
-void ApplyUI::setApply(Apply* applyControl) {
-    this->applyControl = applyControl;
+void ApplyUI::setControl(Apply* applyControl) {
+    this->applyControl = applyControl; //// control 객체를 참조할 수 있도록 속성에 set 함.
 }
 
-void ApplyUI::setOutFile(FILE* out) {
-    this->out = out;
-}
-
-void ApplyUI::setInFile(FILE* in) {
-    this->in = in;
-}

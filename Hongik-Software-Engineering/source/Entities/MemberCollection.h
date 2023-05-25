@@ -5,6 +5,7 @@
 
 #include "Member.h"
 
+//전체 멤버를 담고있는 싱글톤 class
 class MemberCollection {
 public:
 	MemberCollection();

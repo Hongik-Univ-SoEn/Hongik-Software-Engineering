@@ -8,6 +8,7 @@
 
 #include "Member.h"
 
+//개인 회원 entity class
 class IndividualMember : public Member {
 public: 
     

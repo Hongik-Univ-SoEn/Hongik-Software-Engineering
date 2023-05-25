@@ -8,6 +8,7 @@
 
 #include "Recruit.h"
 
+//채용 정보를 담고 있는 싱글톤 class
 class RecruitCollection {
 public: 
 

@@ -5,16 +5,21 @@
 
 #ifndef _CHECKREGISTEREDRECRUITUI_H
 #define _CHECKREGISTEREDRECRUITUI_H
+#include "./../../../UIClass.h"
+#include "./../../Controls/Hire/CheckRegisteredRecruit.h"
 
-class CheckRegisteredRecruitUI {
-public: 
+using namespace std;
+
+class CheckRegisteredRecruitUI : public UIClass {
+public:
     
-void startInterface();
-    
-/**
- * @param businessNumber
- */
-void checkRecruit(string businessNumber);
+    void startInterface();
+    void checkRecruit(string businessNumber);
+    void setControl(CheckRegisteredRecruit* control);
+
+private:
+    CheckRegisteredRecruit* control;
 };
+
 
 #endif //_CHECKREGISTEREDRECRUITUI_H

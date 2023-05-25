@@ -55,7 +55,6 @@ bool MemberCollection::removeMember(string id) {
 		if (!(*i)->getId().compare(id)) {
 			Member* mem = *i;
 			members.erase(i);
-			mem->deleteMember();
 			return true;
 		}
 	}

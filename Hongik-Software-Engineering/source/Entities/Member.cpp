@@ -78,14 +78,6 @@ bool Member::matchIDPW(string id, string pw) {
 }
 
 /*
-	함수 이름 : Member::deleteMember
-	기능      : 주어진 id, pw가 객체의 정보와 일치하는지 판단
-	전달 인자 : 대조하고자 하는 아이디(string id)와 비밀번호(string pw)
-	반환값    : 현재 Member 객체의 ID, PW와 일치하면 true, 일치하지 않으면 false
-*/
-void Member::deleteMember() { }
-
-/*
 	함수 이름 : IndividualMember::getRecruits()
 	기능	   : recruits 반환 기능 제공
 	전달 인자 : 없음

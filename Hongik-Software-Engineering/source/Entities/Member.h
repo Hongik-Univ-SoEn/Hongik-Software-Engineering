@@ -27,8 +27,6 @@ public:
 
 	virtual bool checkDuplicated(string info1, string info2) { return false; }
 
-	void deleteMember();
-
 	vector<Recruit*> getRecruits();
 
 	string getId();

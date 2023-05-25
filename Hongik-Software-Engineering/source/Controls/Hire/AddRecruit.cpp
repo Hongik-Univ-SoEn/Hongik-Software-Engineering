@@ -4,7 +4,9 @@
 
 
 #include "AddRecruit.h"
-#include "./../../Entities/Recruit.h"
+#include "../../Entities/RecruitCollection.h"
+#include "../../Entities/MemberCollection.h"
+#include "../../Entities/CompanyMember.h"
 
 using namespace std;
 /**
@@ -17,11 +19,9 @@ using namespace std;
  * @return List
  */
 
-Recruit* AddRecruit::addRecruit(vector<string> info) {
-   
+Recruit* AddRecruit::addRecruit(vector<string> info) {   
     Recruit* recruit = Recruit::createRecruit(info);
-
- 
-
+    RecruitCollection::getInstance()->addRecruit(recruit);
+    ((CompanyMember*)MemberCollection::getInstance())->addToRecruitList(recruit);
     return recruit;
 }

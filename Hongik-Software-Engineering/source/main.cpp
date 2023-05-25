@@ -10,6 +10,7 @@
 #include "Controls/RecruitmentInfo/Statistic.h"
 #include "Controls/Apply/SearchRecruitByCompanyName.h"
 #include "Controls/Apply/Apply.h"
+#include "Controls/Hire/AddRecruit.h"
 
 #include "Boundaries/MemberManagement/MemberSignUpUI.h"
 #include "Boundaries/MemberManagement/CompanyMemberSignUpUI.h"
@@ -20,6 +21,7 @@
 #include "Boundaries/RecruitmentInfo/StatisticUI.h"
 #include "Boundaries/Apply/SearchRecruitByCompanyNameUI.h"
 #include "Boundaries/Apply/ApplyUI.h"
+#include "Boundaries/Hire/AddRecruitUI.h"
 
 
 #include "Entities/RecruitCollection.h"
@@ -62,6 +64,8 @@ SearchRecruitByCompanyName searchRecruitByCompanyName;
 ApplyUI applyUI;
 Apply applyControl;
 
+AddRecruit addRecruit;
+AddRecruitUI addRecruitUI;
 
 int main()
 {
@@ -93,6 +97,9 @@ int main()
 
 	applyUI.setControl(&applyControl);
  	applyUI.setFilePointer(in_fp, out_fp);
+
+	addRecruitUI.setControl(&addRecruit);
+	addRecruitUI.setFilePointer(in_fp, out_fp);
 
 	doTask();
 
@@ -134,15 +141,18 @@ void doTask()
 				signOutUI.startInterface();
 				break;
 			}
+			break;
 		case 3:
 			switch (menu_level_2) {
 			case 1:
 				// 채용 정보 등록
+				addRecruitUI.startInterface();
 				break;
 			case 2:
 				// 등록된 채용 정보 조회
 				break;
 			}
+			break;
 		case 4:
 			switch (menu_level_2) {
 			case 1:
@@ -153,11 +163,13 @@ void doTask()
 				break;
 			case 3:
 				// 지원 정보 조회
+
 				break;
 			case 4:
 				// 지원 취소
 				break;
 			}
+			break;
 		case 5:
 			switch (menu_level_2) {
 			case 1:
@@ -165,6 +177,7 @@ void doTask()
 				statisticUI.startInterface();
 				break;
 			}
+			break;
 		case 6:
 			switch (menu_level_2) {
 			case 1: // "6.1. “ 종료 메뉴 부분

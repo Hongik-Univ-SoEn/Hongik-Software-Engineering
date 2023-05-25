@@ -10,7 +10,7 @@ void ApplyUI::startInterface() {
     vector<string> result = this->applyControl->addApply(businessNumber, (IndividualMember*)(Member::getInstance())); //// control 클래스 객체의 addApply 함수를 호출.
     
     for (auto str : result) { //// control 객체의 함수를 호출해서 반환받은 결과 값을 파일에 출력.
-        fprintf(out_fp, " %s", str);
+        fprintf(out_fp, " %s", str.c_str());
     }
     fprintf(out_fp, "\n\n");
 }

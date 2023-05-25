@@ -4,7 +4,7 @@
 
 
 #include "SignOutUI.h"
-
+#include "../../Entities/Member.h"
 /**
  * SignOutUI implementation
  */
@@ -15,12 +15,12 @@
  */
 
 void SignOutUI::startInterface() {
-    char id[MAX_STRING];
+    auto id = Member::getInstance()->getId();
 
-    fprintf(out_fp, "2.1. 로그아웃\n>");
+    fprintf(out_fp, "2.2. 로그아웃\n>");
 
     if (control->doSignOut()) {
-        fprintf(out_fp, " %s\n", id);
+        fprintf(out_fp, " %s\n", id.c_str());
     }
 
     fprintf(out_fp, "\n");

@@ -21,7 +21,7 @@ void SearchRecruitByCompanyNameUI::startInterface() {
     vector<string> result = temp->getRecruitByCompanyName(companyName);  // control class 객체의 getRecruitByCompanyName 함수 호출.
 
     for (auto str : result) {
-        fprintf(out_fp, " %s", str); ///// control 객체로부터 반환 받은 결과 값을 file에 차례대로 출력함.
+        fprintf(out_fp, " %s", str.c_str()); ///// control 객체로부터 반환 받은 결과 값을 file에 차례대로 출력함.
     }
     fprintf(out_fp, "\n\n");
 

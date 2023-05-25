@@ -13,7 +13,7 @@ using namespace std;
 
 Recruit::Recruit(string companyName, string businessNumber,
 				 string workField, int numOfHire,
-				 string deadLine, int numsOfApply)
+				 string deadLine, int numsOfApply = 0)
 {
 	this->companyName = companyName;
 	this->businessNumber = businessNumber;
@@ -28,7 +28,7 @@ void Recruit::setNumsOfApply(int num) {
 }
 
 Recruit* Recruit::createRecruit(vector<string> info) {
-	auto rec = new Recruit(info[0], info[1], info[2], stoi(info[3]), info[4], stoi(info[5]));
+	auto rec = new Recruit(info[0], info[1], info[2], stoi(info[3]), info[4]);
 	return rec;
 }
 
@@ -38,9 +38,8 @@ vector<string> Recruit::getRecruitInfo() {
 	info.push_back(this->companyName);
 	info.push_back(this->businessNumber);
 	info.push_back(this->workField);
-	info.push_back(this->deadline);
 	info.push_back(to_string(this->numOfHire));
-	info.push_back(to_string(this->numsOfApply));
+	info.push_back(this->deadline);
 	return info;
 }
 

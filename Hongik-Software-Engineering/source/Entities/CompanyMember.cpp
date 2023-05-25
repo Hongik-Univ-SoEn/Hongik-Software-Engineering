@@ -40,6 +40,7 @@ vector<string> CompanyMember::getInfo() {
  */
 CompanyMember* CompanyMember::createMember(vector<string> info) {
     auto mem = new CompanyMember(info[0], info[1], info[2], info[3]);
+    mem->recruits = vector<Recruit*>();
     return mem;
 }
 

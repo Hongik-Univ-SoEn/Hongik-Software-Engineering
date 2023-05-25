@@ -15,13 +15,6 @@ IndividualMember::IndividualMember(string id, string pw, string name, string soc
 	this->socialSecurityNumber = socialSecurityNumber;
 }
 
-Member* IndividualMember::getInstance() {
-	if (instance == nullptr) {
-		instance = new IndividualMember();
-	}
-	return instance;
-}
-
 vector<string> IndividualMember::getInfo() {
 	auto v = vector<string>();
 	v.push_back(name);
@@ -31,6 +24,7 @@ vector<string> IndividualMember::getInfo() {
 
 IndividualMember* IndividualMember::createMember(vector<string> info) {
 	auto mem = new IndividualMember(info[0], info[1], info[2], info[3]);
+	mem->recruits = vector<Recruit*>();
 	return mem;
 }
 

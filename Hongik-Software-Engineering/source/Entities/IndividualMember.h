@@ -15,8 +15,6 @@ public:
 
     IndividualMember(string id, string pw, string name, string socialSecurityNumber);
 
-    static Member* getInstance();
-
     vector<string> getInfo() override;
 
     static IndividualMember* createMember(vector<string> info);

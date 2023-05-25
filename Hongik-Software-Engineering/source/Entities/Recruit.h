@@ -16,7 +16,7 @@ public:
 
     Recruit(string companyName, string businessNumber,
             string workField, int numOfHire,
-            string deadLine, int numsOfApply = 0);
+            string deadLine, int numsOfApply);
 
     static Recruit* createRecruit(vector<string> info);
 

@@ -17,7 +17,6 @@ public:
 	Member* findMemberByInfo(vector<string> info);
 
 	bool removeMember(string id);
-	//bool removeMemberByInfo(vector<string> info);
 
 	vector<Member*>* getMembers();
 

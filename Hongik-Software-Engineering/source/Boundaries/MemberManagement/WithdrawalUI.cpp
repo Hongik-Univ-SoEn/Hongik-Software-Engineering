@@ -17,9 +17,9 @@
 void WithdrawalUI::startInterface() {
     fprintf(out_fp, "1.2. 회원탈퇴\n>");
 
-    const char* id = Member::getInstance()->getId().c_str();
+    auto id = Member::getInstance()->getId();
     if (control->withDrawal()) {    
-        fprintf(out_fp, " %s\n", id);
+        fprintf(out_fp, " %s\n", id.c_str());
     }
 
     fprintf(out_fp, "\n");

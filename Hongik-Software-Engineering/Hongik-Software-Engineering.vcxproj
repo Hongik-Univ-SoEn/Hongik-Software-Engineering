@@ -60,7 +60,6 @@
     </ClCompile>
     <ClCompile Include="source\Controls\MemberManagement\CompanyMemberSignUp.cpp" />
     <ClCompile Include="source\Controls\MemberManagement\IndividualMemberSignUp.cpp" />
-    <ClCompile Include="source\Controls\MemberManagement\MemberSignUp.cpp" />
     <ClCompile Include="source\Controls\MemberManagement\SignIn.cpp" />
     <ClCompile Include="source\Controls\MemberManagement\SignOut.cpp" />
     <ClCompile Include="source\Controls\MemberManagement\Withdrawal.cpp" />

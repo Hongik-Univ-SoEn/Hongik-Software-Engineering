@@ -123,9 +123,6 @@
     <ClCompile Include="source\Controls\MemberManagement\IndividualMemberSignUp.cpp">
       <Filter>소스 파일\Controls\MemberManagement</Filter>
     </ClCompile>
-    <ClCompile Include="source\Controls\MemberManagement\MemberSignUp.cpp">
-      <Filter>소스 파일\Controls\MemberManagement</Filter>
-    </ClCompile>
     <ClCompile Include="source\Controls\MemberManagement\SignIn.cpp">
       <Filter>소스 파일\Controls\MemberManagement</Filter>
     </ClCompile>

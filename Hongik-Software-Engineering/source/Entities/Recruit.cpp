@@ -25,25 +25,30 @@ Recruit::Recruit(string companyName, string businessNumber,
 
 /*
     함수 이름 : Recruit::setNumsOfApply
-    기능    : 채용 정보의 지원자 수를 설정해줌.
+    기능      : 채용 정보의 지원자 수를 설정
     전달 인자 : int num (지원자 수)
     반환값    : 없음
 */
-
 void Recruit::setNumsOfApply(int num) {
 	numsOfApply = num;
 }
 
+/*
+	함수 이름 : Recruit::createRecruit
+	기능	  : 채용 정보 생성
+	전달 인자 : 회사이름, 사업자번호, 업무분야, 인원수, 신청마감일 순서대로 정보가 담긴 vector<string>
+	반환값    : 생성한 Recruit 객체
+*/
 Recruit* Recruit::createRecruit(vector<string> info) {
 	auto rec = new Recruit(info[0], info[1], info[2], stoi(info[3]), info[4]);
 	return rec;
 }
 
 /*
-    함수 이름 : Recruit::getRecruitInfo()
-    기능    : 채용의 상세 정보를 반환함. 회사이름, 사업자번호, 업무, 인원수, 마감일 정보를 반환.
+    함수 이름 : Recruit::getRecruitInfo
+    기능      : 채용의 상세 정보를 반환함. 회사이름, 사업자번호, 업무, 인원수, 마감일 정보를 반환.
     전달 인자 : 없음.
-    반환값    : 회사이름, 사업자번호, 업무, 인원수, 마감일 정보를 포함하는 vector<stirng> 반환
+    반환값    : 회사이름, 사업자번호, 업무, 인원수, 마감일 정보를 순서대로 포함하는 vector<stirng> 반환
 */
 vector<string> Recruit::getRecruitInfo() {
 	vector<string> info;

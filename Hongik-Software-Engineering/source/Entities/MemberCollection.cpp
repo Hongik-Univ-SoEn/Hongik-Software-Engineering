@@ -52,26 +52,15 @@ Member* MemberCollection::findMemberByInfo(vector<string> info) {
 //  */
 bool MemberCollection::removeMember(string id) {
 	for (auto i = members.begin(); i != members.end(); i++) {
-		if ((*i)->getId().compare(id)) {
+		if (!(*i)->getId().compare(id)) {
+			Member* mem = *i;
 			members.erase(i);
-			(*i)->deleteMember();
+			mem->deleteMember();
 			return true;
 		}
 	}
 	return false;
 }
-
-/*
-bool MemberCollection::removeMemberByInfo(vector<string> info) {
-	for (auto i = members.begin(); i != members.end(); i++) {
-		if ((*i)->getInfo() == info) {
-			members.erase(i);
-			return true;
-		}
-	}
-	return false;
-}
-*/
 
 vector<Member*>* MemberCollection::getMembers() {
 	return &members;

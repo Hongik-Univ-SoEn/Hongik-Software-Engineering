@@ -1,8 +1,3 @@
-/**
- * Project Ã¤¿ë Á¤º¸ ½Ã½ºÅÛ
- */
-
-
 #include "ApplyCancelUI.h"
 #include <iostream>
 #include <string>
@@ -13,28 +8,28 @@ using namespace std;
  */
 
  /*
-	 ÇÔ¼ö ÀÌ¸§ : ApplyCancelUI::startInterface()
-	 ±â´É	   : Ãâ·Â ±â´É Á¦°ø
-	 Àü´Ş ÀÎÀÚ : ¾øÀ½
-	 ¹İÈ¯°ª    : ¾øÀ½
+	 í•¨ìˆ˜ ì´ë¦„ : ApplyCancelUI::startInterface()
+	 ê¸°ëŠ¥	   : ì¶œë ¥ ê¸°ëŠ¥ ì œê³µ
+	 ì „ë‹¬ ì¸ì : ì—†ìŒ
+	 ë°˜í™˜ê°’    : ì—†ìŒ
  */
 void ApplyCancelUI::startInterface() {
 	char businessNumber[MAX_STRING];
 	fscanf(in_fp, "%s", &businessNumber);
 
-	fprintf(out_fp, "4.4. Áö¿ø Ãë¼Ò\n> ");
+	fprintf(out_fp, "4.4. ì§€ì› ì·¨ì†Œ\n> ");
 
 	string result = control->cancelApply(businessNumber);
 	fprintf(out_fp, result.c_str());
 
-	fprintf(out_fp, "\n");
+	fprintf(out_fp, "\n\n");
 }
 
 /*
-  ÇÔ¼ö ÀÌ¸§ : ApplyInfoUI::selectCancel(string businessNumber)
-  ±â´É	   : Áö¿ø Ãë¼Ò ±â´É Á¦°ø
-  Àü´Ş ÀÎÀÚ : string businessNumber
-  ¹İÈ¯°ª    : ¾øÀ½
+  í•¨ìˆ˜ ì´ë¦„ : ApplyInfoUI::selectCancel(string businessNumber)
+  ê¸°ëŠ¥	   : ì§€ì› ì·¨ì†Œ ê¸°ëŠ¥ ì œê³µ
+  ì „ë‹¬ ì¸ì : string businessNumber
+  ë°˜í™˜ê°’    : ì—†ìŒ
 */
 
 void ApplyCancelUI::setControl(ApplyCancel* control) {

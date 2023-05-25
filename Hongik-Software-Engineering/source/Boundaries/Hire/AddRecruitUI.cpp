@@ -27,7 +27,7 @@ void AddRecruitUI::startInterface() {
     v.push_back(deadline);
     control->addRecruit(v);
 
-    fprintf(out_fp, " %s %d %s", workField, &numOfHire, deadline);
+    fprintf(out_fp, " %s %s %s", workField, &numOfHire, deadline);
     fprintf(out_fp, "\n\n");
 }
 

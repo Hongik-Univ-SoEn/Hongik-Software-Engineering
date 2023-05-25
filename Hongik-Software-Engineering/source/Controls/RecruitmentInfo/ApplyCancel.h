@@ -1,8 +1,3 @@
-/**
- * Project 채용 정보 시스템
- */
-
-
 #ifndef _APPLYCANCEL_H
 #define _APPLYCANCEL_H
 

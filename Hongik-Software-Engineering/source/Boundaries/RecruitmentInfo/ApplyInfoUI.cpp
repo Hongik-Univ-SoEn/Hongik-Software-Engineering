@@ -19,7 +19,7 @@ using namespace std;
 	반환값    : 없음
 */
 void ApplyInfoUI::startInterface() {
-    fprintf(out_fp, "4.3. 지원 정보 조회\n>");
+    fprintf(out_fp, "4.3. 지원 정보 조회\n");
 
 	string result = control->applyInfo();
 	fprintf(out_fp, result.c_str());

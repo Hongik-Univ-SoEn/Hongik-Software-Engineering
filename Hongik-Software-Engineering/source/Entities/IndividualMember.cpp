@@ -57,9 +57,9 @@ void IndividualMember::addToApplyList(Recruit* apply) {
 string IndividualMember::cancelApply(string businessNumber) {
 	string result = "";
 	for (auto recruit = recruits.begin(); recruit != recruits.end(); recruit++) {
-		if ((*recruit)->getBusinessNumber().compare(businessNumber)) {
+		if (!(*recruit)->getBusinessNumber().compare(businessNumber)) {
 			//[회사이름] [사업자번호] [업무]
-			result += (*recruit)->getCompanyName() + (*recruit)->getBusinessNumber() + (*recruit)->getWorkField();
+			result += (*recruit)->getCompanyName() + " " + (*recruit)->getBusinessNumber() + " " + (*recruit)->getWorkField();
 			(*recruit)->setNumsOfApply((*recruit)->getNumsOfApply() - 1);
 			recruits.erase(recruit);
 			break;

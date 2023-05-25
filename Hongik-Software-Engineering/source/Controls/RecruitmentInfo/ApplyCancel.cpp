@@ -1,8 +1,3 @@
-/**
- * Project 채용 정보 시스템
- */
-
-
 #include "ApplyCancel.h"
 #include "../../Boundaries/RecruitmentInfo/ApplyCancelUI.h"
 #include "../../Entities/IndividualMember.h"

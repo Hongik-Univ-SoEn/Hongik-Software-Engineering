@@ -45,16 +45,21 @@ void IndividualMember::addToApplyList(Recruit* apply) {
 	함수 이름 : IndividualMember::cancelApply(string businessNumber)
 	기능	  : 지원 취소 기능 제공
 	전달 인자 : string businessNumber
-	반환값    : 없음
+	반환값    : string
 */
-void IndividualMember::cancelApply(string businessNumber) {
+string IndividualMember::cancelApply(string businessNumber) {
+	string result = "";
 	for (auto recruit = recruits.begin(); recruit != recruits.end(); recruit++) {
-		if (!(*recruit)->getBusinessNumber().compare(businessNumber)) {
+		if ((*recruit)->getBusinessNumber().compare(businessNumber)) {
+			//[회사이름] [사업자번호] [업무]
+			result += (*recruit)->getCompanyName() + (*recruit)->getBusinessNumber() + (*recruit)->getWorkField();
 			(*recruit)->setNumsOfApply((*recruit)->getNumsOfApply() - 1);
 			recruits.erase(recruit);
 			break;
 		}
 	}
+
+	return result;
 }
 
 /*

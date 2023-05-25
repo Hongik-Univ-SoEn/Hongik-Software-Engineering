@@ -6,6 +6,7 @@
 #include "ApplyInfo.h"
 #include "../../Boundaries/RecruitmentInfo/ApplyInfoUI.h"
 #include "../../Entities/IndividualMember.h"
+#include "../../Entities/Member.h"
 #include <iostream>
 using namespace std;
 
@@ -13,32 +14,6 @@ using namespace std;
  * ApplyInfo implementation
  */
 
-/*
-	함수 이름 : ApplyInfo::cancelApply()
-	기능	   : 지원 취소 기능 제공
-	전달 인자 : string businessNumber
-	반환값    : 없음
-*/
-void ApplyInfo::cancelApply(string businessNumber) {
-    IndividualMember *im = (IndividualMember *)member;
-    im->cancelApply(businessNumber);
-
-    string result = makestringForPrint();
-    applyInfoUI->startInterface(result);
-}
-
-/*
-  함수 이름 : ApplyInfo::ApplyInfo(Member *member)
-  기능	   : ApplyInfo의 생성자
-  전달 인자 : Member *member
-  반환값    : 없음
-*/
-ApplyInfo::ApplyInfo(Member *member) : member(member){
-    applyInfoUI = new ApplyInfoUI(this);
-
-    string result = makestringForPrint();
-    applyInfoUI->startInterface(result);
-}
 
 /*
   함수 이름 : ApplyInfo::makestringForPrint()
@@ -46,13 +21,19 @@ ApplyInfo::ApplyInfo(Member *member) : member(member){
   전달 인자 : 없음
   반환값    : string
 */
-string ApplyInfo::makestringForPrint(){
-    string result = "> ";
+string ApplyInfo::applyInfo(){
+    string result = "";
+    Member* member = Member::getInstance();
     
-    vector<Recruit> recruits = member->getRecruits();
+    vector<Recruit*> recruits = member->getRecruits();
     // 정보 가져오기
     for(int i = 0; i < recruits.size(); i++){
-        result += recruits[i].getDetailInfo() + "\n";
+        vector<string> tmp = recruits[i]->getRecruitInfo();
+        
+        // getRecruitInfo --> 회사이름, 사업자번호, 업무, 신청마감일, 인원수, 지원자수
+        string temp = "> " + tmp[0] + tmp[1] + tmp[2] + tmp[4] + tmp[3] + "\n";
+
+        result += temp;
     }
 
     return result;

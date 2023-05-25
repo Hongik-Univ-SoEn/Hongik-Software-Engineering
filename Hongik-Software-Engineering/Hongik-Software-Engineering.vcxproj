@@ -37,8 +37,9 @@
     <ClCompile Include="source\Boundaries\MemberManagement\SignInUI.cpp" />
     <ClCompile Include="source\Boundaries\MemberManagement\SignOutUI.cpp" />
     <ClCompile Include="source\Boundaries\MemberManagement\WithdrawalUI.cpp" />
+    <ClCompile Include="source\Boundaries\RecruitmentInfo\ApplyCancelUI.cpp" />
     <ClCompile Include="source\Boundaries\RecruitmentInfo\ApplyInfoUI.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="source\Boundaries\RecruitmentInfo\StatisticUI.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
@@ -61,8 +62,9 @@
     <ClCompile Include="source\Controls\MemberManagement\SignIn.cpp" />
     <ClCompile Include="source\Controls\MemberManagement\SignOut.cpp" />
     <ClCompile Include="source\Controls\MemberManagement\Withdrawal.cpp" />
+    <ClCompile Include="source\Controls\RecruitmentInfo\ApplyCancel.cpp" />
     <ClCompile Include="source\Controls\RecruitmentInfo\ApplyInfo.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="source\Controls\RecruitmentInfo\Statistic.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
@@ -95,8 +97,9 @@
     <ClInclude Include="source\Boundaries\MemberManagement\SignInUI.h" />
     <ClInclude Include="source\Boundaries\MemberManagement\SignOutUI.h" />
     <ClInclude Include="source\Boundaries\MemberManagement\WithdrawalUI.h" />
+    <ClInclude Include="source\Boundaries\RecruitmentInfo\ApplyCancelUI.h" />
     <ClInclude Include="source\Boundaries\RecruitmentInfo\ApplyInfoUI.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClInclude>
     <ClInclude Include="source\Boundaries\RecruitmentInfo\StatisticUI.h">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
@@ -119,11 +122,12 @@
     <ClInclude Include="source\Controls\MemberManagement\SignIn.h" />
     <ClInclude Include="source\Controls\MemberManagement\SignOut.h" />
     <ClInclude Include="source\Controls\MemberManagement\Withdrawal.h" />
+    <ClInclude Include="source\Controls\RecruitmentInfo\ApplyCancel.h" />
     <ClInclude Include="source\Controls\RecruitmentInfo\ApplyInfo.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClInclude>
     <ClInclude Include="source\Controls\RecruitmentInfo\Statistic.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClInclude>
     <ClInclude Include="source\Entities\CompanyMember.h" />
     <ClInclude Include="source\Entities\IndividualMember.h" />

@@ -23,7 +23,7 @@ public:
 
     void addToApplyList(Recruit* recruit);
 
-    void cancelApply(string businessNumber);
+    string cancelApply(string businessNumber);
 
     string analysis() override;
 

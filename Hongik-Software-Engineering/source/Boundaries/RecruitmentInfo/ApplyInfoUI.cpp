@@ -3,8 +3,9 @@
  */
 
 
-#include "../../Controls/RecruitmentInfo/ApplyInfo.h"
+#include "../../Boundaries/RecruitmentInfo/ApplyInfoUI.h"
 #include <iostream>
+#include <string>
 using namespace std;
 
 /**
@@ -17,8 +18,13 @@ using namespace std;
 	전달 인자 : 없음
 	반환값    : 없음
 */
-void ApplyInfoUI::startInterface(string print) {
-    cout << print << endl;
+void ApplyInfoUI::startInterface() {
+    fprintf(out_fp, "4.3. 지원 정보 조회\n>");
+
+	string result = control->applyInfo();
+	fprintf(out_fp, result.c_str());
+
+    fprintf(out_fp, "\n");
 }
 
 /*
@@ -27,16 +33,8 @@ void ApplyInfoUI::startInterface(string print) {
   전달 인자 : string businessNumber
   반환값    : 없음
 */
-void ApplyInfoUI::selectCancel(string businessNumber) {
-    applyInfo->cancelApply(businessNumber);
-}
 
-/*
-  함수 이름 : ApplyInfoUI::ApplyInfoUI(ApplyInfo *applyInfo)
-  기능	   : 생성자
-  전달 인자 : ApplyInfo *applyInfo
-  반환값    : 없음
-*/
-ApplyInfoUI::ApplyInfoUI(ApplyInfo *applyInfo) {
-    this->applyInfo = applyInfo;
+
+void ApplyInfoUI::setControl(ApplyInfo* control) {
+	this->control = control;
 }

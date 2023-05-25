@@ -11,6 +11,8 @@
 #include "Controls/Apply/SearchRecruitByCompanyName.h"
 #include "Controls/Apply/Apply.h"
 #include "Controls/Hire/AddRecruit.h"
+#include "Controls/RecruitmentInfo/ApplyInfo.h"
+#include "Controls/RecruitmentInfo/ApplyCancel.h"
 
 #include "Boundaries/MemberManagement/MemberSignUpUI.h"
 #include "Boundaries/MemberManagement/CompanyMemberSignUpUI.h"
@@ -25,6 +27,8 @@
 
 
 #include "Entities/RecruitCollection.h"
+#include "Boundaries/RecruitmentInfo/ApplyInfoUI.h"
+#include "Boundaries/RecruitmentInfo/ApplyCancelUI.h"
 
 #define INPUT_FILE_NAME "input.txt"
 #define OUTPUT_FILE_NAME "output.txt"
@@ -67,6 +71,12 @@ Apply applyControl;
 AddRecruit addRecruit;
 AddRecruitUI addRecruitUI;
 
+ApplyInfo applyInfo;
+ApplyInfoUI applyInfoUI;
+
+ApplyCancel applyCancel;
+ApplyCancelUI applyCancelUI;
+
 int main()
 {
 	// 파일 입출력을 위한 초기화
@@ -100,6 +110,12 @@ int main()
 
 	addRecruitUI.setControl(&addRecruit);
 	addRecruitUI.setFilePointer(in_fp, out_fp);
+
+	applyInfoUI.setControl(&applyInfo);
+	applyInfoUI.setFilePointer(in_fp, out_fp);
+
+	applyCancelUI.setControl(&applyCancel);
+	applyCancelUI.setFilePointer(in_fp, out_fp);
 
 	doTask();
 
@@ -163,10 +179,11 @@ void doTask()
 				break;
 			case 3:
 				// 지원 정보 조회
-
+				applyInfoUI.startInterface();
 				break;
 			case 4:
 				// 지원 취소
+				applyCancelUI.startInterface();
 				break;
 			}
 			break;
@@ -210,5 +227,5 @@ void join()
 // if needed, erase the '\n\n' at the last
 void program_exit()
 {
-
+	fprintf(out_fp, "6.1. 종료");
 }

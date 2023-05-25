@@ -177,6 +177,12 @@
     <ClCompile Include="UIClass.cpp">
       <Filter>소스 파일\Boundaries</Filter>
     </ClCompile>
+    <ClCompile Include="source\Boundaries\RecruitmentInfo\ApplyCancelUI.cpp">
+      <Filter>소스 파일\Boundaries\RecruitmentInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Controls\RecruitmentInfo\ApplyCancel.cpp">
+      <Filter>소스 파일\Controls\RecruitmentInfo</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\Entities\RecruitCollection.h">
@@ -271,6 +277,12 @@
     </ClInclude>
     <ClInclude Include="UIClass.h">
       <Filter>헤더 파일\Boundaries</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Boundaries\RecruitmentInfo\ApplyCancelUI.h">
+      <Filter>헤더 파일\Boundaries\RecruitmentInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Controls\RecruitmentInfo\ApplyCancel.h">
+      <Filter>헤더 파일\Controls\RecruitmentInfo</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

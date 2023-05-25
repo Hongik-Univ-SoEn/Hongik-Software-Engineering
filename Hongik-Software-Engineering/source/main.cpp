@@ -228,4 +228,6 @@ void join()
 void program_exit()
 {
 	fprintf(out_fp, "6.1. 종료");
+	fclose(in_fp);
+	fclose(out_fp);
 }

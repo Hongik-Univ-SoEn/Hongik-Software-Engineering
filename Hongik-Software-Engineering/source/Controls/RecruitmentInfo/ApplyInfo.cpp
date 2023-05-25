@@ -16,10 +16,10 @@ using namespace std;
 
 
 /*
-  함수 이름 : ApplyInfo::makestringForPrint()
+  함수 이름 : ApplyInfo::applyInfo()
   기능	   : 출력을 위한 문자열 생성
   전달 인자 : 없음
-  반환값    : string
+  반환값    : string // 회사이름, 사업자번호, 업무, 
 */
 string ApplyInfo::applyInfo(){
     string result = "";

@@ -13,7 +13,7 @@ using namespace std;
  */
 
 /*
-	함수 이름 : ApplyInfoUI::startInterface(string print)
+	함수 이름 : ApplyInfoUI::startInterface()
 	기능	   : 출력 기능 제공
 	전달 인자 : 없음
 	반환값    : 없음
@@ -28,9 +28,9 @@ void ApplyInfoUI::startInterface() {
 }
 
 /*
-  함수 이름 : ApplyInfoUI::selectCancel(string businessNumber)
+  함수 이름 : ApplyInfoUI::setControl(ApplyInfo* control)
   기능	   : 지원 취소 기능 제공
-  전달 인자 : string businessNumber
+  전달 인자 : ApplyInfo* control 
   반환값    : 없음
 */
 

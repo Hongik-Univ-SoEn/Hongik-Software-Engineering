@@ -37,7 +37,9 @@
     <ClCompile Include="source\Boundaries\MemberManagement\SignInUI.cpp" />
     <ClCompile Include="source\Boundaries\MemberManagement\SignOutUI.cpp" />
     <ClCompile Include="source\Boundaries\MemberManagement\WithdrawalUI.cpp" />
-    <ClCompile Include="source\Boundaries\RecruitmentInfo\ApplyCancelUI.cpp" />
+    <ClCompile Include="source\Boundaries\RecruitmentInfo\ApplyCancelUI.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="source\Boundaries\RecruitmentInfo\ApplyInfoUI.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>
@@ -62,7 +64,9 @@
     <ClCompile Include="source\Controls\MemberManagement\SignIn.cpp" />
     <ClCompile Include="source\Controls\MemberManagement\SignOut.cpp" />
     <ClCompile Include="source\Controls\MemberManagement\Withdrawal.cpp" />
-    <ClCompile Include="source\Controls\RecruitmentInfo\ApplyCancel.cpp" />
+    <ClCompile Include="source\Controls\RecruitmentInfo\ApplyCancel.cpp">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="source\Controls\RecruitmentInfo\ApplyInfo.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
     </ClCompile>

@@ -12,17 +12,9 @@ using namespace std;
 //// RecruitCollection 객체를 참조함.
 class SearchRecruitByCompanyName {
 public: 
-   
-   
 
     vector<string> getRecruitByCompanyName(string companyName);
-  
 
-private: 
-
-    RecruitCollection* recruitCollection;
-
-   
 };
 
 #endif //_SEARCHRECRUITBYCOMPANYNAME_H

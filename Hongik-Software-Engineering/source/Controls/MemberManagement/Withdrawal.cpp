@@ -17,13 +17,6 @@ bool Withdrawal::withDrawal() {
     
     memcol->removeMember(mem->getId());
     delete mem;
-}
 
-void Withdrawal::start() {
-    ui->startInterface();
-}
-
-void Withdrawal::setUI(WithdrawalUI* ui) {
-    this->ui = ui;
-    
+    return true;
 }

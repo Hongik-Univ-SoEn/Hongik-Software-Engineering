@@ -4,7 +4,8 @@
 
 
 #include "CompanyMemberSignUpUI.h"
-
+#include <vector>
+using namespace std;
 /**
  * CompanyMemberSignUpUI implementation
  */
@@ -16,8 +17,9 @@
 void CompanyMemberSignUpUI::startInterface() {
     char id[MAX_STRING], pw[MAX_STRING], companyName[MAX_STRING], businessNumber[MAX_STRING];
 
+    
     fprintf(out_fp, "1.1. 회원가입\n>");
-    fscanf(in_fp, "%s %s %s %s", id, pw, companyName, businessNumber);
+    fscanf(in_fp, "%s %s %s %s", companyName, businessNumber, id, pw);
 
     vector<string> v;
     v.push_back(id);

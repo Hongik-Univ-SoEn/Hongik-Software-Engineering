@@ -11,7 +11,6 @@ class IndividualMemberSignUp : public MemberSignUp {
 public:
 
 	bool doSignUp(vector<string> signUpInfo);
-	void start();
 };
 
 #endif //_INDIVIDUALMEMBERSIGNUP_H

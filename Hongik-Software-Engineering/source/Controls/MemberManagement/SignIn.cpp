@@ -10,9 +10,6 @@
   * SignIn implementation
   */
 
-void SignIn::start() {
-	ui->startInterface();
-}
 
 bool SignIn::doSignIn(vector<string> signInInfo) {
 	auto memcol = MemberCollection::getInstance();
@@ -23,9 +20,4 @@ bool SignIn::doSignIn(vector<string> signInInfo) {
 
 	if (mem == nullptr) return false;
 	else return true;
-}
-
-void SignIn::setUI(SignInUI* ui) {
-	this->ui = ui;
-	ui->setControl(this);
 }

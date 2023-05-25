@@ -12,7 +12,6 @@ class CompanyMemberSignUp : public MemberSignUp {
 public:
 
 	bool doSignUp(vector<string> signUpInfo);
-	void start();
 
 };
 

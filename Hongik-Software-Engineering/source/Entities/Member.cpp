@@ -5,6 +5,7 @@
 #include "Member.h"
 #include <iostream>
 
+Member* Member::instance = nullptr;
 /**
  * Member implementation
  */

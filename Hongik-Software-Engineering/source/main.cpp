@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 
-
 #include "Controls/MemberManagement/MemberSignUp.h"
 #include "Controls/MemberManagement/CompanyMemberSignUp.h"
 #include "Controls/MemberManagement/IndividualMemberSignUp.h"
@@ -16,7 +15,6 @@
 #include "Boundaries/MemberManagement/SignInUI.h"
 #include "Boundaries/MemberManagement/SignoutUI.h"
 
-#define MAX_STRING 32
 #define INPUT_FILE_NAME "input.txt"
 #define OUTPUT_FILE_NAME "output.txt"
 
@@ -30,8 +28,6 @@ void join();
 FILE* in_fp, * out_fp;
 
 // Control classes
-MemberSignUp memberSignUp;
-MemberSignUpUI memberSignUpUI;
 
 CompanyMemberSignUp companySignUp;
 CompanyMemberSignUpUI companySignUpUI;
@@ -51,16 +47,24 @@ SignOutUI signOutUI;
 int main()
 {
 	// 파일 입출력을 위한 초기화
-	FILE* in_fp = fopen(INPUT_FILE_NAME, "r+");
-	FILE* out_fp = fopen(OUTPUT_FILE_NAME, "w+");
+	in_fp = fopen(INPUT_FILE_NAME, "r+");
+	out_fp = fopen(OUTPUT_FILE_NAME, "w+");
 
 	// setup
-	memberSignUp.setUI(&memberSignUpUI);
-	companySignUp.setUI(&companySignUpUI);
-	individualSignUp.setUI(&individualSignUpUI);
-	withdrawal.setUI(&withdrawalUI);
-	signIn.setUI(&signInUI);
-	signOut.setUI(&signOutUI);
+	companySignUpUI.setControl(&companySignUp);
+	companySignUpUI.setFilePointer(in_fp, out_fp);
+
+	individualSignUpUI.setControl(&individualSignUp);
+	individualSignUpUI.setFilePointer(in_fp, out_fp);
+
+	withdrawalUI.setControl(&withdrawal);
+	withdrawalUI.setFilePointer(in_fp, out_fp);
+
+	signInUI.setControl(&signIn);
+	signInUI.setFilePointer(in_fp, out_fp);
+
+	signOutUI.setControl(&signOut);
+	signOutUI.setFilePointer(in_fp, out_fp);
 
 	doTask();
 
@@ -87,7 +91,7 @@ void doTask()
 				break;
 			case 2:
 				// 회원 탈퇴
-				withdrawal.start();
+				withdrawalUI.startInterface();
 				break;
 			}
 			break;
@@ -95,11 +99,11 @@ void doTask()
 			switch (menu_level_2) {
 			case 1:
 				// 로그인
-				signIn.start();
+				signInUI.startInterface();
 				break;
 			case 2:
 				// 로그아웃
-				signOut.start();
+				signOutUI.startInterface();
 				break;
 			}
 		case 3:
@@ -148,12 +152,15 @@ void doTask()
 // 회원가입
 void join()
 {
-	switch (memberSignUp.getType()) {
+	int type;
+	fscanf(in_fp, "%d", &type);
+	
+	switch (type) {
 	case 1:
-		companySignUp.start();
+		companySignUpUI.startInterface();
 		break;
 	case 2:
-		individualSignUp.start();
+		individualSignUpUI.startInterface();
 		break;
 	}
 }

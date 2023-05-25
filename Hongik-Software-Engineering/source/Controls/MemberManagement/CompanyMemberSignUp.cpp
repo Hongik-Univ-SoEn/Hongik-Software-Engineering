@@ -5,6 +5,7 @@
 
 #include "CompanyMemberSignUp.h"
 #include "../../Entities/CompanyMember.h"
+#include "../../Entities/MemberCollection.h"
 
 /**
  * CompanyMemberSignUp implementation
@@ -27,8 +28,4 @@ bool CompanyMemberSignUp::doSignUp(vector<string> signUpInfo) {
     memcol->addMember(CompanyMember::createMember(signUpInfo));
 
     return true;
-}
-
-void CompanyMemberSignUp::start() {
-    ui->startInterface();
 }

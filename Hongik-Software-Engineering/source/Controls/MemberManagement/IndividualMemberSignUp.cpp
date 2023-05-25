@@ -5,6 +5,7 @@
 
 #include "IndividualMemberSignUp.h"
 #include "../../Entities/IndividualMember.h"
+#include "../../Entities/MemberCollection.h"
 
 /**
  * IndividualMemberSignUp implementation
@@ -22,8 +23,4 @@ bool IndividualMemberSignUp::doSignUp(vector<string> signUpInfo) {
     memcol->addMember(IndividualMember::createMember(signUpInfo));
 
     return true;
-}
-
-void IndividualMemberSignUp::start() {
-    ui->startInterface();
 }

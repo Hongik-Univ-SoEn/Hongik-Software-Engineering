@@ -6,9 +6,8 @@
 #ifndef _WITHDRAWALUI_H
 #define _WITHDRAWALUI_H
 
-class UIClass;
-class Withdrawal;
 #include "../../../UIClass.h"
+#include "../../Controls/MemberManagement/Withdrawal.h"
 
 class WithdrawalUI : public UIClass {
 public:

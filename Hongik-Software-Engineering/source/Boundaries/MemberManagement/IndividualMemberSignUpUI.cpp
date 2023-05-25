@@ -19,7 +19,7 @@ void IndividualMemberSignUpUI::startInterface() {
 
     fprintf(out_fp, "1.1. 회원가입\n>");
 
-    fscanf(in_fp, "%s %s %s %s", id, pw, name, socialSecurityNumber);
+    fscanf(in_fp, "%s %s %s %s", name, socialSecurityNumber, id, pw);
 
     vector<string> v;
     v.push_back(id);

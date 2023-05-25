@@ -6,9 +6,8 @@
 #ifndef _MEMBERSIGNUPUI_H
 #define _MEMBERSIGNUPUI_H
 
-class MemberSignUp;
-class UIClass;
 #include "../../../UIClass.h"
+#include "../../Controls/MemberManagement/MemberSignUp.h"
 
 class MemberSignUpUI : public UIClass {
 public:

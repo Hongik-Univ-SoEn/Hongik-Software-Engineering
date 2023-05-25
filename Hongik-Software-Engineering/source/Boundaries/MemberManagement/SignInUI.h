@@ -6,8 +6,7 @@
 #ifndef _SIGNINUI_H
 #define _SIGNINUI_H
 
-class SignIn;
-class UIClass;
+#include "../../Controls/MemberManagement/SignIn.h"
 #include "../../../UIClass.h"
 
 using namespace std;

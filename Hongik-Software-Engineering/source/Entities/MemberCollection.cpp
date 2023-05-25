@@ -8,6 +8,8 @@
 //  * MemberCollection implementation
 //  */
 
+MemberCollection* MemberCollection::instance = nullptr;
+
 MemberCollection::MemberCollection() {
 	this->members = vector<Member*>();
 }

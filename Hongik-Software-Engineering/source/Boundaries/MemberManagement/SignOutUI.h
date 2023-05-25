@@ -6,8 +6,7 @@
 #ifndef _SIGNOUTUI_H
 #define _SIGNOUTUI_H
 
-class SignOut;
-class UIClass;
+#include "../../Controls/MemberManagement/SignOut.h"
 #include "../../../UIClass.h"
 
 class SignOutUI : public UIClass {

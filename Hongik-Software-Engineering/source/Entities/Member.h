@@ -7,6 +7,7 @@
 
 #include "Recruit.h"
 
+//회원 entity class
 class Member {
 public:
 

@@ -11,6 +11,7 @@
 
 using namespace std;
 
+//채용 정보 entity class
 class Recruit {
 public: 
 

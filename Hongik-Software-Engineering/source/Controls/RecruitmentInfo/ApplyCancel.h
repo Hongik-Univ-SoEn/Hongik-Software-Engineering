@@ -4,7 +4,7 @@
 #include <string>
 using namespace std;
 
-
+// 지원 취소 control class
 class ApplyCancel {
 
 public:

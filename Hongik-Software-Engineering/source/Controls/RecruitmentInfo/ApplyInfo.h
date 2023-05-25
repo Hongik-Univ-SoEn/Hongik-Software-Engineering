@@ -7,7 +7,7 @@
 #define _APPLYINFO_H
 #include "../../Entities/Member.h"
 
-
+//지원 정보 조회 control class
 class ApplyInfo {
 
 public: 

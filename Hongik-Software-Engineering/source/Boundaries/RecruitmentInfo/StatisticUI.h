@@ -9,6 +9,8 @@
 #include "../../Controls/RecruitmentInfo/Statistic.h"
 using namespace std;
 
+
+//지원 정보 통계 boundary class
 class StatisticUI : public UIClass{
 public: 
     

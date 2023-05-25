@@ -5,7 +5,7 @@
 #include "../../Controls/RecruitmentInfo/ApplyCancel.h"
 using namespace std;
 
-
+//지원 취소 boundary class
 class ApplyCancelUI : public UIClass {
 private:
 

@@ -8,6 +8,8 @@
 #include "../../Controls/RecruitmentInfo/ApplyInfo.h"
 #include "../../../UIClass.h"
 
+
+//지원 정보 조회 boundary class
 class ApplyInfoUI :public UIClass{
 private:
     ApplyInfo *control;

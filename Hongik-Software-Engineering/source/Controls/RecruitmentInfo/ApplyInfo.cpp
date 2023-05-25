@@ -31,7 +31,7 @@ string ApplyInfo::applyInfo(){
         vector<string> tmp = recruits[i]->getRecruitInfo();
         
         // getRecruitInfo --> 회사이름, 사업자번호, 업무, 신청마감일, 인원수, 지원자수
-        string temp = "> " + tmp[0] + tmp[1] + tmp[2] + tmp[4] + tmp[3] + "\n";
+        string temp = "> " + tmp[0] + " " + tmp[1] + " " + tmp[2] + " " + tmp[4] + " " + tmp[3] + "\n";
 
         result += temp;
     }

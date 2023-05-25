@@ -6,15 +6,18 @@
 #ifndef _ADDRECRUITUI_H
 #define _ADDRECRUITUI_H
 
-class AddRecruitUI {
-public: 
-    
-void startInerface();
-    
-/**
- * @param workField
- */
-void addNewRecruit(string workField);
+#include "../../Controls/Hire/AddRecruit.h"
+#include "../../../UIClass.h"
+#include "./../../Entities/Member.h"
+
+using namespace std;
+
+class AddRecruitUI :public UIClass {
+public:
+    void startInterface();
+    void setControl(AddRecruit* control);
+private:
+    AddRecruit* control;
 };
 
 #endif //_ADDRECRUITUI_H

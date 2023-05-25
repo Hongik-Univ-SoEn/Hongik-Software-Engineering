@@ -78,10 +78,10 @@ bool Member::matchIDPW(string id, string pw) {
 }
 
 /*
-	함수 이름 : IndividualMember::getRecruits()
-	기능	   : recruits 반환 기능 제공
+	함수 이름 : Member::getRecruits
+	기능	  : 지원했거나 올렸던 채용 정보 반환 기능 제공
 	전달 인자 : 없음
-	반환값    : 없음
+	반환값    : 채용정보가 담긴 vector<Recruit*>
 */
 vector<Recruit*> Member::getRecruits() {
 	return this->recruits;
@@ -91,6 +91,12 @@ string Member::getId() {
 	return this->id;
 }
 
+/*
+	함수 이름 : Member::analysis
+	기능	  : 상속을 위한 가상함수. 순수가상함수로 만들면 객체 생성이 불가능하기에 어쩔 수 없이 구현
+	전달 인자 : 없음
+	반환값    : 빈 문자열
+*/
 string Member::analysis() {
 	return "";
 }

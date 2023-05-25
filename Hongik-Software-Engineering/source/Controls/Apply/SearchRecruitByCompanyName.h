@@ -5,7 +5,6 @@
 #ifndef _SEARCHRECRUITBYCOMPANYNAME_H
 #define _SEARCHRECRUITBYCOMPANYNAME_H
 #include "../../Entities/RecruitCollection.h"
-#include "../../Boundaries/Apply/SearchRecruitByCompanyNameUI.h"
 using namespace std;
 
 

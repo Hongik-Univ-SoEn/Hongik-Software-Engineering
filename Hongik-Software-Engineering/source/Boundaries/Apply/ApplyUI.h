@@ -1,7 +1,7 @@
 
 #ifndef _APPLYUI_H
 #define _APPLYUI_H
-#include "../../Entities/IndividualMember.h"
+
 #include "../../Controls/Apply/Apply.h"
 #include"../../UIClass.h"
 
@@ -12,9 +12,7 @@
 class ApplyUI :public UIClass{
 public:
 
-	
-
-	string startInterface();
+	void startInterface();
 
 	void setControl(Apply* applyControl);
 

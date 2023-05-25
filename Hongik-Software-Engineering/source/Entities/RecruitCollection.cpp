@@ -4,6 +4,8 @@
 
 #include "RecruitCollection.h"
 
+RecruitCollection* RecruitCollection::recruitCollectionInstance = nullptr;
+
 RecruitCollection* RecruitCollection::getInstance() {
 	if (recruitCollectionInstance == nullptr) {
 		recruitCollectionInstance = new RecruitCollection();

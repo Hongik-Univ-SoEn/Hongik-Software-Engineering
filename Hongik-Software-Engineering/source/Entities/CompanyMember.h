@@ -23,7 +23,8 @@ public:
        
     void addToRecruitList(Recruit* recruit);
 
-    virtual string analysis();
+    string analysis() override;
+
 private: 
     string companyName;
     string businessNumber;

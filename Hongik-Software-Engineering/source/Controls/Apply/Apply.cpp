@@ -1,28 +1,16 @@
+#include "Apply.h"
 
+vector<string> Apply::addApply(string businessNumber, IndividualMember* individualMember) {
+	/// 컨트롤 객체가 가지고 있는 recruitCollection으로부터 함수를 호출해 특정 회사 이름을 가지고 있는 채용 정보(Recruit)을 반환
+	Recruit* recruit = RecruitCollection::getInstance()->findRecruitByBusinessNumber(businessNumber);
+	/// recruitCollection으로부터 받은 채용 정보의 지원자 수를 +1 해서 recruit객체의 지원자 수를 설정
+	recruit->setNumsOfApply(recruit->getNumsOfApply() + 1);
+	////  individualMember객체의 addToApplyList 함수를 호출하면서 변경된 recruit 객체를 전달
+	individualMember->addToApplyList(recruit);
 
-#ifndef _SEARCHRECRUITBYCOMPANYNAMEUI_H
-#define _SEARCHRECRUITBYCOMPANYNAMEUI_H
-
-#include<string>
-#include<vector>
-#include"../../Controls/Apply/SearchRecruitByCompanyName.h">
-#include"../../UIClass.h"
-using namespace std;
-
-///// 해당 클래스는 회사 이름으로 검색했을 때의 채용 정보 리스트를 반환하기 위해 사용되는 boundary class
-////control 클래스인 SearchRecruitByCompanyName의 객체를 참조함.
-/// 파일 입출력을 위해서 파일 포인터를 담고 있는 UIClass class를 상속받음.
-class SearchRecruitByCompanyNameUI : public UIClass{
-public: 
-    
-    void setControl(SearchRecruitByCompanyName* x);
-    void startInterface();
-
-private:
-    SearchRecruitByCompanyName* searchRecruitByCompanyName;
-
-};
-
-#endif 
-
-
+	vector<string> result;
+	result.push_back(recruit->getCompanyName());  //// 사용자가 지원한 채용 정보의 회사 이름을 반환
+	result.push_back(recruit->getBusinessNumber()); /// 사용자가 지원한 채용 정보의 사업자 번호를 반환
+	result.push_back(recruit->getWorkField());  /// 사용자가 지원한 채용 정보의 직무를 반환.
+	return result;
+}

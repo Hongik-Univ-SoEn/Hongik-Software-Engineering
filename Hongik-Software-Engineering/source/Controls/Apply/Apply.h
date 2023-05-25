@@ -7,7 +7,6 @@
 
 #include "../../Entities/IndividualMember.h"
 #include "../../Entities/RecruitCollection.h"
-#include "../../Boundaries/Apply/ApplyUI.h"
 
 ///// 해당 클래스는 채용 즉시 지원 usecase에 사용되는 control class
 //// RecruitCollection 객체를 참조함.
@@ -16,9 +15,6 @@ public:
 
 	vector<string> addApply(string businessNumber, IndividualMember* individualMember); 
 
-
-private:
-	RecruitCollection* recruitCollection;
 };
 
 #endif //_APPLY_H

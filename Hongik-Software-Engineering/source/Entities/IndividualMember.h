@@ -27,7 +27,7 @@ public:
 
     void cancelApply(string businessNumber);
 
-    string analysis();
+    string analysis() override;
 
 private: 
     string name;

@@ -16,11 +16,9 @@ using namespace std;
 */
 Recruit* AddRecruit::addRecruit(vector<string> info) {
    
-    Recruit* recruit = Recruit::createRecruit(info); //recruit에 createRecruit(info) 값을 넣고
-  
-    RecruitCollection::getInstance()->addRecruit(recruit);     //RecruitCollection 에 방금 만들어진 채용 공고를 넣어준다
-   
-    ((CompanyMember*)Member::getInstance())->addToRecruitList(recruit);  //회사회원이 만든 채용 공고 리스트에 추가
+    Recruit* recruit = Recruit::createRecruit(info);
+    RecruitCollection::getInstance()->addRecruit(recruit);
+    ((CompanyMember*)Member::getInstance())->addToRecruitList(recruit);
 
     return recruit;
 }

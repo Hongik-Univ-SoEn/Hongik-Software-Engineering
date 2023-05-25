@@ -11,12 +11,10 @@
 
 using namespace std;
 
+//해당 클래스는 회사회원이 등록한 본인의 채용 정보를 조회할때 리스트를 반환해주는 control class
 class CheckRegisteredRecruit {
 public:
 
-	/**
-	 * @param businessNumber
-	 */
 	vector<string> showRecruit();
 };
 

@@ -10,6 +10,7 @@
 
 using namespace std;
 
+// 해당 클래스는 회사회원이 새로운 채용 정보를 등록할때 정보를 받고 넘겨주는 control class 
 class Recruit;
 
 class AddRecruit {

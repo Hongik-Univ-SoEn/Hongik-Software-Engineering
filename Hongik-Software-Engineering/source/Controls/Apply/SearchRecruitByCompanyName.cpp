@@ -6,6 +6,13 @@
 #include "SearchRecruitByCompanyName.h"
 
 
+/*
+    함수 이름 : SearchRecruitByCompanyName::getRecruitByCompanyName()
+    기능     : 지원 취소 기능 제공
+    전달 인자 : string companyName
+    반환값    : vector<string> 타입으로 반환되며, 반환되는 내용은 회사이름, 사업자번호, 직무, 마감일, 인원수를 반환한다.
+*/
+
 vector<string> SearchRecruitByCompanyName::getRecruitByCompanyName(string companyName) {
   
     vector<string> info = RecruitCollection::getInstance()->findRecruitByCompanyName(companyName); 

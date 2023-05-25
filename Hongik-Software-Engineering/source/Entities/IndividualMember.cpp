@@ -37,6 +37,13 @@ bool IndividualMember::checkDuplicated(string name, string socialSecurityNumber)
 	}
 }
 
+
+/*
+    함수 이름 : IndividualMember::addToApplyList(Recruit* apply)
+    기능    : 개인 회원이 갖고 있는 지원 정보에 새로운 지원 정보를 추가함.
+    전달 인자 : Recruit 클래스의 포인터 객체
+    반환값    : 없음
+*/
 void IndividualMember::addToApplyList(Recruit* apply) {
 	this->recruits.push_back(apply);
 }
